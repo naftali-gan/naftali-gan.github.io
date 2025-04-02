@@ -1,0 +1,12 @@
+Write a Cursor prompt for building a website for Naftali Gan, a nursery located in Israel.
+When writing the prompt include the following points, separated by steps:
+1. The website should be friendly, light, and fast. Use Next.js Static Site Generation (SSG).
+2. The website should be used for marketing, so use search engine optimization (SEO).
+3. The website should support both Hebrew and English, so we need RTL and LTR support. The default language is Hebrew.
+4. The website MUST support mobile.
+5. The website will be published on GitHub pages.
+6. The website should support accessibility based on Israeli laws, you can use a free extension (such as https://www.negishim.org/) to enable it.
+7. The website should include these pages: home, about, products, gallery, contact (including address with Google Maps, phone number, email, opening hours, etc.
+8. Use subtle animations across the website.
+9. Base your data on https://www.naftaligan.co.il/ which is our current website.
+10. Create a GitHub action for deploying the website.
