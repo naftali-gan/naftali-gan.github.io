@@ -20,9 +20,14 @@ const LangSwitcher = ({ locale = 'he' }: LangSwitcherProps) => {
       return `/${otherLocale}`;
     }
     
-    // If we're on a subpage
-    const pathWithoutLocale = pathname.replace(/^\/(?:he|en)/, '');
-    return `/${otherLocale}${pathWithoutLocale}`;
+    // If we're on a subpage, replace the current locale with the other one
+    const pathParts = pathname.split('/');
+    if (pathParts.length >= 2) {
+      pathParts[1] = otherLocale;
+      return pathParts.join('/');
+    }
+    
+    return `/${otherLocale}`;
   };
   
   return (

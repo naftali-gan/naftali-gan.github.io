@@ -19,11 +19,8 @@ export function ClientFooter({ locale }: { locale?: string }) {
 
 export function DocumentSetup() {
   useEffect(() => {
-    // Set a js-loading class and remove it after document loads
-    document.documentElement.classList.add('js-loading');
+    // Remove js-loading class when page is fully loaded
     document.documentElement.classList.remove('js-loading');
-    
-    // We can add other document setup logic here if needed
   }, []);
   
   return null;

@@ -35,11 +35,11 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
   };
 
   const navItems = [
-    { key: 'home', href: `/${locale === 'he' ? '' : locale}` },
-    { key: 'about', href: `/${locale === 'he' ? '' : locale}/about` },
-    { key: 'products', href: `/${locale === 'he' ? '' : locale}/products` },
-    { key: 'gallery', href: `/${locale === 'he' ? '' : locale}/gallery` },
-    { key: 'contact', href: `/${locale === 'he' ? '' : locale}/contact` },
+    { key: 'home', href: locale === 'he' ? '/he' : '/en' },
+    { key: 'about', href: `/${locale}/about` },
+    { key: 'products', href: `/${locale}/products` },
+    { key: 'gallery', href: `/${locale}/gallery` },
+    { key: 'contact', href: `/${locale}/contact` },
   ];
 
   return (
@@ -47,7 +47,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <Link href={`/${locale === 'he' ? '' : locale}`} className="font-bold text-xl text-green-600">
+            <Link href={locale === 'he' ? '/he' : '/en'} className="font-bold text-xl text-green-600">
               גן נפתלי | Naftali Gan
             </Link>
           </div>

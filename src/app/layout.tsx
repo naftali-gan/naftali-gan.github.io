@@ -8,8 +8,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // We don't set lang or dir here, they will be set in the language-specific layouts
   return (
-    <html>
+    <html suppressHydrationWarning>
+      <head />
       <body className={inter.className}>{children}</body>
     </html>
   );
