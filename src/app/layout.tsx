@@ -1,21 +1,16 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "גן נפתלי | Naftali Gan",
-  description: "גן נפתלי - משתלה לצמחים ואביזרי גינון",
-};
-
+// A basic function that determines which locale we're in based on the URL
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html className="js-loading">
       <body className={inter.className}>{children}</body>
     </html>
   );

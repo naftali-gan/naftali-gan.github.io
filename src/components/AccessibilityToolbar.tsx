@@ -30,9 +30,17 @@ const AccessibilityToolbar = ({ locale = 'he' }: AccessibilityToolbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [fontSize, setFontSize] = useState(100); // percentage
   const [highContrast, setHighContrast] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-  // Apply accessibility settings
+  // Set mounted state after component mounts to prevent hydration mismatch
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Apply accessibility settings - only run this on the client
+  useEffect(() => {
+    if (!mounted) return;
+    
     document.documentElement.style.fontSize = `${fontSize}%`;
     
     if (highContrast) {
@@ -40,8 +48,12 @@ const AccessibilityToolbar = ({ locale = 'he' }: AccessibilityToolbarProps) => {
     } else {
       document.documentElement.classList.remove('high-contrast');
     }
+  }, [fontSize, highContrast, mounted]);
+
+  // Load saved settings - only run once after mounting
+  useEffect(() => {
+    if (!mounted) return;
     
-    // Load saved settings
     const savedSettings = localStorage.getItem('accessibility-settings');
     if (savedSettings) {
       try {
@@ -52,12 +64,14 @@ const AccessibilityToolbar = ({ locale = 'he' }: AccessibilityToolbarProps) => {
         console.error('Failed to parse saved accessibility settings', error);
       }
     }
-  }, [fontSize, highContrast]);
+  }, [mounted]);
 
-  // Save settings when changed
+  // Save settings when changed - only run on client
   useEffect(() => {
+    if (!mounted) return;
+    
     localStorage.setItem('accessibility-settings', JSON.stringify({ fontSize, highContrast }));
-  }, [fontSize, highContrast]);
+  }, [fontSize, highContrast, mounted]);
 
   const increaseFontSize = () => {
     if (fontSize < 150) {
@@ -79,6 +93,11 @@ const AccessibilityToolbar = ({ locale = 'he' }: AccessibilityToolbarProps) => {
     setFontSize(100);
     setHighContrast(false);
   };
+
+  // Don't render anything during server-side rendering to prevent hydration mismatch
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <div className="fixed top-4 left-4 z-50">

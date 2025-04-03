@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import { FaClock, FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 type FooterProps = {
@@ -24,6 +25,12 @@ const translations = {
 
 const Footer = ({ locale = 'he' }: FooterProps) => {
   const t = translations[locale as keyof typeof translations];
+
+  const [currentYear, setCurrentYear] = useState(2024);
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
 
   // Quick links href construction with locale path 
   const getLink = (path: string) => `/${locale === 'he' ? '' : locale}${path}`;
@@ -119,7 +126,7 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-green-800 text-center">
-          <p>{t.rights} © {new Date().getFullYear()}</p>
+          <p>{t.rights} © {currentYear}</p>
           <div className="mt-4 flex justify-center space-x-6">
             <Link href={getLink('/privacy')} className="hover:text-green-300 transition-colors">
               {t.privacy}

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import LangSwitcher from './LangSwitcher';
 
 type NavigationProps = {
   locale?: string;
@@ -28,9 +29,6 @@ const translations = {
 const Navigation = ({ locale = 'he' }: NavigationProps) => {
   const t = translations[locale as keyof typeof translations];
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  // Create paths for language switching
-  const otherLocale = locale === 'he' ? 'en' : 'he';
   
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -66,12 +64,9 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
               </Link>
             ))}
             
-            <Link 
-              href={`/${otherLocale}`}
-              className="mx-3 py-2 px-4 border border-gray-300 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
-            >
-              {locale === 'he' ? 'English' : 'עברית'}
-            </Link>
+            <div onClick={() => setIsMenuOpen(false)}>
+              <LangSwitcher locale={locale} />
+            </div>
           </div>
 
           {/* Mobile menu button */}
@@ -102,13 +97,9 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
               </Link>
             ))}
             
-            <Link 
-              href={`/${otherLocale}`}
-              className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-500"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              {locale === 'he' ? 'English' : 'עברית'}
-            </Link>
+            <div onClick={() => setIsMenuOpen(false)}>
+              <LangSwitcher locale={locale} />
+            </div>
           </div>
         </div>
       )}

@@ -17,6 +17,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  animation: fadeIn 0.2s ease-in forwards;
 }
 
 /* High contrast mode for accessibility */
@@ -62,4 +63,26 @@ html[dir="rtl"] .ml-auto {
 html[dir="rtl"] .mr-auto {
   margin-right: 0;
   margin-left: auto;
+}
+
+/* Replace the loading state CSS */
+
+/* Simple loading state */
+html.js-loading {
+  opacity: 0;
+}
+
+html:not(.js-loading) {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+/* Add a tiny delay to prevent flash of unstyled content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 } 

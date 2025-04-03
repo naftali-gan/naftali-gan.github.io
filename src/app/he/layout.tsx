@@ -1,28 +1,28 @@
+'use client';
+
 import AccessibilityToolbar from '@/components/AccessibilityToolbar';
 import Footer from '@/components/Footer';
 import Navigation from '@/components/Navigation';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'גן נפתלי | משתלה לצמחים ואביזרי גינון',
-  description: 'גן נפתלי - משתלה המספקת צמחים איכותיים ומוצרי גינון מאז שנת 2000',
-};
+import { useEffect } from 'react';
 
 export default function HebrewLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Remove loading class after component mounts
+  useEffect(() => {
+    document.documentElement.classList.remove('js-loading');
+  }, []);
+
   return (
-    <html lang="he" dir="rtl">
-      <body>
-        <div className="flex flex-col min-h-screen">
-          <AccessibilityToolbar locale="he" />
-          <Navigation locale="he" />
-          <main className="flex-grow">{children}</main>
-          <Footer locale="he" />
-        </div>
-      </body>
-    </html>
+    <>
+      <div className="flex flex-col min-h-screen">
+        <AccessibilityToolbar locale="he" />
+        <Navigation locale="he" />
+        <main className="flex-grow">{children}</main>
+        <Footer locale="he" />
+      </div>
+    </>
   );
 } 
