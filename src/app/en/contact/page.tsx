@@ -42,7 +42,7 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
         <p className="text-center max-w-3xl mx-auto mb-12">
-          The Naftali's Nursery team will be happy to answer any questions. Fill out the form or use the contact details below.
+          The Naftali&apos;s Nursery team will be happy to answer any questions. Fill out the form or use the contact details below.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">

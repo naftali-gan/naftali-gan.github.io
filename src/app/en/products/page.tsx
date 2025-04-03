@@ -170,7 +170,7 @@ export default function ProductsPage() {
         
         <div className="bg-green-50 rounded-lg p-8 text-center">
           <h2 className="text-2xl font-semibold mb-4">Looking for something special?</h2>
-          <p className="mb-6">If you don't find what you're looking for, please contact us and we'll be happy to help.</p>
+          <p className="mb-6">If you don&apos;t find what you&apos;re looking for, please contact us and we&apos;ll be happy to help.</p>
           <button className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-3 rounded-md text-lg font-medium">
             Contact Us
           </button>

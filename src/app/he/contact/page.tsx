@@ -70,7 +70,7 @@ export default function ContactPage() {
                 </div>
                 
                 <div className="mb-4">
-                  <label htmlFor="email" className="block mb-1 font-medium">דוא"ל</label>
+                  <label htmlFor="email" className="block mb-1 font-medium">דוא&quot;ל</label>
                   <input
                     type="email"
                     id="email"
@@ -161,7 +161,7 @@ export default function ContactPage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-medium">דוא"ל</h3>
+                  <h3 className="font-medium">דוא&quot;ל</h3>
                   <p className="text-gray-600">info@naftaligan.co.il</p>
                 </div>
               </div>

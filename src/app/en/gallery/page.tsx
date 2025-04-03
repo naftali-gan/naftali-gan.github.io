@@ -79,7 +79,7 @@ export default function GalleryPage() {
       <div className="max-w-7xl mx-auto px-4">
         <h1 className="text-4xl font-bold mb-8 text-center">Our Gallery</h1>
         <p className="text-center max-w-3xl mx-auto mb-12">
-          View a collection of photos from our nursery, our plants, and various projects we've been involved in over the years.
+          View a collection of photos from our nursery, our plants, and various projects we&apos;ve been involved in over the years.
         </p>
         
         <div className="mb-8 flex flex-wrap justify-center gap-2">

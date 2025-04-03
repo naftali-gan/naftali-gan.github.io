@@ -24,7 +24,7 @@ export default function EnglishHome() {
         </div>
         
         <div className="max-w-4xl z-10 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Naftali's Nursery</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Naftali&apos;s Nursery</h1>
           <p className="text-xl md:text-2xl mb-8">A nursery providing quality plants and gardening products since 2000</p>
           <Link 
             href="#contact" 
@@ -228,7 +228,7 @@ export default function EnglishHome() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="space-y-4">
-              <p className="text-lg">At Naftali's Nursery in Kfar Yabetz, we specialize in marketing and selling mature palm trees for immediate planting, including Archontophoenix, Foxtail Palm, King Palm, Robelini, Triangle Palm, Coconut Palm, and more. We also offer shaped citrus trees that bear edible fruit.</p>
+              <p className="text-lg">At Naftali&apos;s Nursery in Kfar Yabetz, we specialize in marketing and selling mature palm trees for immediate planting, including Archontophoenix, Foxtail Palm, King Palm, Robelini, Triangle Palm, Coconut Palm, and more. We also offer shaped citrus trees that bear edible fruit.</p>
               <p className="text-lg">Additionally, the nursery has a variety of olive trees in all sizes and other ornamental trees such as Cycas thouarsii and Cycas revoluta.</p>
               <p className="text-lg">We sell to individuals and businesses, as well as wholesale. Our customers include private homes, gardeners, building committees, institutions, municipalities, councils, penthouses, hotels, and more.</p>
               <p className="text-lg">All trees in the nursery are sold without intermediary gaps, directly from the grower.</p>
