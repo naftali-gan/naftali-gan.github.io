@@ -48,7 +48,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link href={locale === 'he' ? '/he' : '/en'} className="font-bold text-xl text-green-600">
-              גן נפתלי | Naftali Gan
+              משתלת נפתלי | Naftali's Nursery
             </Link>
           </div>
 

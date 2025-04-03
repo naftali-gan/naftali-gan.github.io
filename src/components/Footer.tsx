@@ -10,13 +10,13 @@ type FooterProps = {
 
 const translations = {
   en: {
-    rights: 'All rights reserved to Naftali Gan',
+    rights: 'All rights reserved to Naftali\'s Nursery',
     privacy: 'Privacy Policy',
     terms: 'Terms of Use',
     contact: 'Contact Us',
   },
   he: {
-    rights: 'כל הזכויות שמורות לגן נפתלי',
+    rights: 'כל הזכויות שמורות למשתלת נפתלי',
     privacy: 'מדיניות פרטיות',
     terms: 'תנאי שימוש',
     contact: 'צור קשר',

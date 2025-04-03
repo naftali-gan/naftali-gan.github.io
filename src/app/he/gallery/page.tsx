@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'גלריה | גן נפתלי',
-  description: 'גלו תמונות מהמשתלה והצמחים המרהיבים שלנו בגן נפתלי',
+  title: 'גלריה | משתלת נפתלי',
+  description: 'גלו תמונות מהמשתלה והצמחים המרהיבים שלנו במשתלת נפתלי',
 };
 
 export default function GalleryPage() {

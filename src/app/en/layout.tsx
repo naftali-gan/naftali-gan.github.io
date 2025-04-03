@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import '../globals.css';
 
 export const metadata: Metadata = {
-  title: 'Naftali Gan | Plants and Gardening Supplies Nursery',
-  description: 'Naftali Gan - A nursery providing quality plants and gardening products since 2000',
+  title: 'Naftali\'s Nursery | Plants and Gardening Supplies Nursery',
+  description: 'Naftali\'s Nursery - A nursery providing quality plants and gardening products since 2000',
 };
 
 export default function EnglishLayout({

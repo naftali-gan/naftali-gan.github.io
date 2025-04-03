@@ -1,6 +1,6 @@
-# Naftali Gan Website
+# Naftali's Nursery Website
 
-Website for Naftali Gan, a nursery providing quality plants and gardening products since 2000.
+Website for Naftali's Nursery, a nursery providing quality plants and gardening products since 2000.
 
 ## Features
 

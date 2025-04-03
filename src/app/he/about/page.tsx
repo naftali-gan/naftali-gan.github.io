@@ -2,21 +2,21 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'אודות | גן נפתלי',
-  description: 'למדו על הסיפור והחזון שלנו בגן נפתלי, משתלה מובילה בישראל',
+  title: 'אודות | משתלת נפתלי',
+  description: 'למדו על הסיפור והחזון שלנו במשתלת נפתלי, משתלה מובילה בישראל',
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-center">אודות גן נפתלי</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">אודות משתלת נפתלי</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/hero-background.jpg"
-              alt="גן נפתלי"
+              alt="משתלת נפתלי"
               fill
               style={{ objectFit: "cover" }}
             />
@@ -25,7 +25,7 @@ export default function AboutPage() {
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-semibold mb-4">הסיפור שלנו</h2>
             <p className="mb-4">
-              גן נפתלי נוסד בשנת 2000 מתוך אהבה עזה לטבע ולגינון. מה שהתחיל כעסק משפחתי קטן, צמח במהלך השנים למשתלה מובילה המספקת צמחים איכותיים ומוצרי גינון לבתים, עסקים, ורשויות מקומיות ברחבי ישראל.
+              משתלת נפתלי נוסדה בשנת 2000 מתוך אהבה עזה לטבע ולגינון. מה שהתחיל כעסק משפחתי קטן, צמח במהלך השנים למשתלה מובילה המספקת צמחים איכותיים ומוצרי גינון לבתים, עסקים, ורשויות מקומיות ברחבי ישראל.
             </p>
             <p className="mb-4">
               המטרה שלנו היא לא רק לספק צמחים יפים, אלא גם לחלוק את הידע והניסיון שלנו עם הלקוחות שלנו כדי לעזור להם ליצור ולשמר גנים יפהפיים ובריאים.

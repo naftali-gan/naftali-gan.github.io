@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Products | Naftali Gan',
-  description: 'Discover our wide range of quality plants and gardening products at Naftali Gan',
+  title: 'Products | Naftali\'s Nursery',
+  description: 'Discover our wide range of quality plants and gardening products at Naftali\'s Nursery',
 };
 
 export default function ProductsPage() {

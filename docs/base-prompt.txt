@@ -1,4 +1,4 @@
-Write a Cursor prompt for building a website for Naftali Gan, a nursery located in Israel.
+Write a Cursor prompt for building a website for Naftali's Nursery, a nursery located in Israel.
 When writing the prompt include the following points, separated by steps:
 1. The website should be friendly, light, and fast. Use Next.js Static Site Generation (SSG).
 2. The website should be used for marketing, so use search engine optimization (SEO).

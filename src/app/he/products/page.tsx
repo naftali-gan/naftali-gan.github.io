@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'מוצרים | גן נפתלי',
-  description: 'גלו את מגוון הצמחים ומוצרי הגינון האיכותיים שלנו בגן נפתלי',
+  title: 'מוצרים | משתלת נפתלי',
+  description: 'גלו את מגוון הצמחים ומוצרי הגינון האיכותיים שלנו במשתלת נפתלי',
 };
 
 export default function ProductsPage() {

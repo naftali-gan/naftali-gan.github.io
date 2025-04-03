@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Naftali Gan | Plants and Gardening Supplies',
-  description: 'Naftali Gan - A nursery providing quality plants and gardening products since 2000',
+  title: 'Naftali\'s Nursery | Plants and Gardening Supplies',
+  description: 'Naftali\'s Nursery - A nursery providing quality plants and gardening products since 2000',
 };
 
 export default function EnglishHome() {
@@ -24,7 +24,7 @@ export default function EnglishHome() {
         </div>
         
         <div className="max-w-4xl z-10 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Naftali Gan</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Naftali's Nursery</h1>
           <p className="text-xl md:text-2xl mb-8">A nursery providing quality plants and gardening products since 2000</p>
           <Link 
             href="#contact" 

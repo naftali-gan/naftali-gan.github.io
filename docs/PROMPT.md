@@ -1,6 +1,6 @@
-**Prompt for Building the Naftali Gan Website**
+**Prompt for Building the Naftali's Nursery Website**
 
-Build a website for Naftali Gan, a nursery in Israel, by following these steps:
+Build a website for Naftali's Nursery, a nursery in Israel, by following these steps:
 
 1. **Use Yarn as the Package Manager**  
     - Utilize **Yarn** for managing project dependencies and running scripts (e.g., `yarn install`, `yarn build`, `yarn dev`), ensuring a consistent and efficient development workflow.
@@ -35,9 +35,9 @@ Build a website for Naftali Gan, a nursery in Israel, by following these steps:
 10. **Include Essential Pages**  
    Create the following pages with their respective content:  
    - **Home**: A welcoming introductory page for the nursery.  
-   - **About**: Details about Naftali Gan’s mission, values, and history.  
+   - **About**: Details about Naftali's Nursery's mission, values, and history.  
    - **Products**: A showcase of nursery products, such as plants and gardening supplies, with descriptions and images.  
-   - **Gallery**: A visual collection of images displaying the nursery’s offerings, facilities, or events.  
+   - **Gallery**: A visual collection of images displaying the nursery's offerings, facilities, or events.  
    - **Contact**: Contact details including:  
      - Nursery address with an embedded **Google Map**.  
      - Phone number, email, and opening hours.  

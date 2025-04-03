@@ -2,21 +2,21 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'About | Naftali Gan',
-  description: 'Learn about our story and vision at Naftali Gan, a leading nursery in Israel',
+  title: 'About | Naftali\'s Nursery',
+  description: 'Learn about our story and vision at Naftali\'s Nursery, a leading nursery in Israel',
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-center">About Naftali Gan</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">About Naftali's Nursery</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/hero-background.jpg"
-              alt="Naftali Gan"
+              alt="Naftali's Nursery"
               fill
               style={{ objectFit: "cover" }}
             />
@@ -25,7 +25,7 @@ export default function AboutPage() {
           <div className="flex flex-col justify-center">
             <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
             <p className="mb-4">
-              Naftali Gan was founded in 2000 out of a deep love for nature and gardening. What began as a small family business has grown over the years into a leading nursery providing quality plants and gardening products to homes, businesses, and local authorities throughout Israel.
+              Naftali's Nursery was founded in 2000 out of a deep love for nature and gardening. What began as a small family business has grown over the years into a leading nursery providing quality plants and gardening products to homes, businesses, and local authorities throughout Israel.
             </p>
             <p className="mb-4">
               Our goal is not only to provide beautiful plants but also to share our knowledge and experience with our customers to help them create and maintain beautiful and healthy gardens.
