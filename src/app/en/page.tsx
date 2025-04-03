@@ -1,3 +1,4 @@
+import Carousel from '@/components/Carousel';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -13,14 +14,13 @@ export default function EnglishHome() {
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center text-center px-4">
         <div className="absolute inset-0 -z-10">
-          <Image
-            src="/images/hero-background.jpg"
-            alt="Garden center"
-            fill
-            priority
-            style={{ objectFit: "cover", objectPosition: "center" }}
+          <Carousel 
+            images={[
+              { src: '/images/home/carousel1.webp', alt: 'Naftali\'s Nursery - Image 1' },
+              { src: '/images/home/carousel2.webp', alt: 'Naftali\'s Nursery - Image 2' },
+              { src: '/images/home/carousel3.webp', alt: 'Naftali\'s Nursery - Image 3' },
+            ]}
           />
-          <div className="absolute inset-0 bg-black/30" />
         </div>
         
         <div className="max-w-4xl z-10 text-white">
