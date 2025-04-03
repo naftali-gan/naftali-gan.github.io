@@ -32,8 +32,13 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
     setCurrentYear(new Date().getFullYear());
   }, []);
 
-  // Quick links href construction with locale path 
-  const getLink = (path: string) => `/${locale === 'he' ? '' : locale}${path}`;
+  // Updated link construction method to match Navigation component
+  const getLink = (path: string) => {
+    if (path === '') {
+      return locale === 'he' ? '/he' : '/en';
+    }
+    return `/${locale}${path}`;
+  };
 
   return (
     <footer className="bg-green-900 text-white">
