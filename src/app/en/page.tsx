@@ -35,6 +35,40 @@ export default function EnglishHome() {
         </div>
       </section>
       
+      {/* About Section */}
+      <section className="py-16 px-4" id="about">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">About Our Nursery</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <p className="text-lg">At Naftali&apos;s Nursery in Kfar Yabetz, we specialize in marketing and selling mature palm trees for immediate planting, including Archontophoenix, Foxtail Palm, King Palm, Robelini, Triangle Palm, Coconut Palm, and more. We also offer shaped citrus trees that bear edible fruit.</p>
+              <p className="text-lg">Additionally, the nursery has a variety of olive trees in all sizes and other ornamental trees such as Cycas thouarsii and Cycas revoluta.</p>
+              <p className="text-lg">We sell to individuals and businesses, as well as wholesale. Our customers include private homes, gardeners, building committees, institutions, municipalities, councils, penthouses, hotels, and more.</p>
+              <p className="text-lg">All trees in the nursery are sold without intermediary gaps, directly from the grower.</p>
+              
+              <div className="mt-6">
+                <Link
+                  href="/en/products"
+                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
+                >
+                  View our plant list
+                </Link>
+              </div>
+            </div>
+            
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <Image
+                src="/images/nursery.jpg"
+                alt="Naftali's Nursery"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Latest Products Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -217,40 +251,6 @@ export default function EnglishHome() {
             >
               View All Products
             </Link>
-          </div>
-        </div>
-      </section>
-      
-      {/* About Section */}
-      <section className="py-16 px-4" id="about">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">About Our Nursery</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="space-y-4">
-              <p className="text-lg">At Naftali&apos;s Nursery in Kfar Yabetz, we specialize in marketing and selling mature palm trees for immediate planting, including Archontophoenix, Foxtail Palm, King Palm, Robelini, Triangle Palm, Coconut Palm, and more. We also offer shaped citrus trees that bear edible fruit.</p>
-              <p className="text-lg">Additionally, the nursery has a variety of olive trees in all sizes and other ornamental trees such as Cycas thouarsii and Cycas revoluta.</p>
-              <p className="text-lg">We sell to individuals and businesses, as well as wholesale. Our customers include private homes, gardeners, building committees, institutions, municipalities, councils, penthouses, hotels, and more.</p>
-              <p className="text-lg">All trees in the nursery are sold without intermediary gaps, directly from the grower.</p>
-              
-              <div className="mt-6">
-                <Link
-                  href="/en/products"
-                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
-                >
-                  View our plant list
-                </Link>
-              </div>
-            </div>
-            
-            <div className="relative h-96 rounded-lg overflow-hidden">
-              <Image
-                src="/images/nursery.jpg"
-                alt="Naftali's Nursery"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
           </div>
         </div>
       </section>

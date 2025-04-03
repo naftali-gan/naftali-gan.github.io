@@ -35,6 +35,40 @@ export default function HebrewHome() {
         </div>
       </section>
       
+      {/* About Section */}
+      <section className="py-16 px-4" id="about">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">אודות המשתלה</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <Image
+                src="/images/nursery.jpg"
+                alt="משתלת נפתלי"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            
+            <div className="space-y-4 text-right">
+              <p className="text-lg">אנחנו במשתלת נפתלי שבכפר יעבץ מתמחים בשיווק ומכירה של עצי דקל בוגרים לשתילה מיידית מסוג טבעות, זנב שועל, דקל המלך, רובליני, משולש, קוקוס וכו&apos; וכן עצי הדרים מעוצבים ומניבים פרי לאכילה.</p>
+              <p className="text-lg">בנוסף במשתלה מגוון עצי זית בכל הגדלים ועצי נוי אחרים כגון ציקס טורסאי וציקס רבולטה.</p>
+              <p className="text-lg">אנו מוכרים לפרטיים ולעסקים וגם בסיטונאות. המכירה לבתים פרטיים, גננים, ועדי בתים, מוסדות, עיריות, מועצות, פנטהאוזים, בתי מלון וכו&apos;.</p>
+              <p className="text-lg">כל העצים במשתלה נמכרים ללא פערי תיווך, ישירות מהמגדל.</p>
+              
+              <div className="mt-6">
+                <Link
+                  href="/he/products"
+                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
+                >
+                  צפו ברשימת הצמחים שלנו
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Latest Products Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -217,40 +251,6 @@ export default function HebrewHome() {
             >
               צפו בכל המוצרים
             </Link>
-          </div>
-        </div>
-      </section>
-      
-      {/* About Section */}
-      <section className="py-16 px-4" id="about">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">אודות המשתלה</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="relative h-96 rounded-lg overflow-hidden">
-              <Image
-                src="/images/nursery.jpg"
-                alt="משתלת נפתלי"
-                fill
-                style={{ objectFit: "cover" }}
-              />
-            </div>
-            
-            <div className="space-y-4 text-right">
-              <p className="text-lg">אנחנו במשתלת נפתלי שבכפר יעבץ מתמחים בשיווק ומכירה של עצי דקל בוגרים לשתילה מיידית מסוג טבעות, זנב שועל, דקל המלך, רובליני, משולש, קוקוס וכו&apos; וכן עצי הדרים מעוצבים ומניבים פרי לאכילה.</p>
-              <p className="text-lg">בנוסף במשתלה מגוון עצי זית בכל הגדלים ועצי נוי אחרים כגון ציקס טורסאי וציקס רבולטה.</p>
-              <p className="text-lg">אנו מוכרים לפרטיים ולעסקים וגם בסיטונאות. המכירה לבתים פרטיים, גננים, ועדי בתים, מוסדות, עיריות, מועצות, פנטהאוזים, בתי מלון וכו&apos;.</p>
-              <p className="text-lg">כל העצים במשתלה נמכרים ללא פערי תיווך, ישירות מהמגדל.</p>
-              
-              <div className="mt-6">
-                <Link
-                  href="/he/products"
-                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
-                >
-                  צפו ברשימת הצמחים שלנו
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </section>
