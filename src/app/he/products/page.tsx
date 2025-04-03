@@ -17,7 +17,7 @@ export default function ProductsPage() {
         { 
           id: 1, 
           name: 'דקל טבעות', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/cunninghamiana.webp',
           scientificName: 'Archontophoenix cunninghamiana',
           height: '15-20 מ\'',
           diameter: '20-50 ס"מ',
@@ -26,7 +26,7 @@ export default function ProductsPage() {
         { 
           id: 2, 
           name: 'דקל זנב שועל', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/bifurcate.webp',
           scientificName: 'Wodyetia bifurcate',
           height: '6-10 מ\'',
           details: 'דקל גבוה, מרשים ויפהפה בעל מראה טרופי. מקורו באוסטרליה. גודלו בינוני עד גדול, גובהו מגיע לכ-10 מטרים. קצב צמיחתו בינוני עד מהיר ודורש כמות השקייה בינונית.'
@@ -34,7 +34,7 @@ export default function ProductsPage() {
         { 
           id: 3, 
           name: 'דקל המלך', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/roystonea.webp',
           scientificName: 'Roystonea',
           height: '15-20 מ\'',
           diameter: '40-70 ס"מ',
@@ -43,7 +43,7 @@ export default function ProductsPage() {
         { 
           id: 4, 
           name: 'ציקס טורסאי', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/thouarsii.webp',
           scientificName: 'Cycas thouarsii',
           height: '1-2 מ\'',
           details: 'ציקס ירוק-עד שמקורו במדגסקר. גודלו קטן – בינוני, גובהו מגיע לכ-2 מטרים ועליו משתרעים לרוחב של 1.5-2 מטרים. קצב צמיחתו בינוני ודורש כמות השקייה בינונית.'
@@ -51,7 +51,7 @@ export default function ProductsPage() {
         { 
           id: 5, 
           name: 'דקל רובליני', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/roebelenii.webp',
           scientificName: 'Phoenix roebelenii',
           height: '2-3 מ\'',
           details: 'דקל קטן וקל מאוד לגידול וטיפוח. מגיע לגובה של כ-2-3 מטרים ועליו משתרעים לרוחב של כ-2 מטרים. קצב צמיחתו בינוני ודורש כמות השקייה בינונית.'
@@ -59,7 +59,7 @@ export default function ProductsPage() {
         { 
           id: 6, 
           name: 'ציקס רבולטה', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/revoluta.webp',
           scientificName: 'Cycas revoluta',
           height: '1.5-2 מ\'',
           details: 'ציקס ירוק עד שמקורו ביפן. מתאפיין במנה סימטרי למדי ובעל עלים ירוקים ומבריקים. גובהו מגיע לכ-2 מטרים ועליו משתרעים לרוחב של כ-1.5 מטרים. קצב צמיחתו איטי ודורש כמות השקייה נמוכה עד בינונית.'
@@ -74,19 +74,19 @@ export default function ProductsPage() {
         { 
           id: 7, 
           name: 'דקל משולש', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/decaryi.webp',
           scientificName: 'Dypsis decaryi',
           height: '5-6 מ\'',
-          details: 'דקל שמקורו בדרום מדגסקר. גודלו בינוני, גובהו כ-5-6 מטרים ועליו יכולים להגיע לאורך של כ-3 מטרים. קצב צמיחתו בינוני עד מהיר ודורש כמות השקייה בינונית.'
+          details: 'דקל שמקורו בדרום מדגסקר. גודלו בינוני, גובהו כ-5-6 מטרים ואורך עליו יכול להגיע לכ-3 מטרים. קצב צמיחתו בינוני עד מהיר ודורש כמות השקייה בינונית.'
         },
         { 
           id: 8, 
-          name: 'דקל קוקוס', 
-          image: '/images/product-2.jpg',
+          name: 'דקל המלכה', 
+          image: '/images/products/romanzoffiana.webp',
           scientificName: 'Syagrus romanzoffiana',
           height: '15-20 מ\'',
           diameter: '20-50 ס"מ',
-          details: 'דקל בעל מראה טרופי שמקורו ביערות דרום אמריקה. גודלו בינוני עד גדול, גובהו לרוב מגיע לכ-15 מטר ורוחב הגזע משתנה, בין 20 ל-50 ס"מ. דקל הקוקוס הינו עץ עמיד וקצב צמיחתו מהיר, ודורש כמות השקייה בינונית.'
+          details: 'דקל בעל מראה טרופי שמקורו ביערות דרום אמריקה. גודלו בינוני עד גדול, גובהו בדרך כלל מגיע לכ-15 מטרים ורוחב הגזע משתנה בין 20 ל-50 ס"מ. דקל המלכה הוא עץ עמיד בעל קצב צמיחה מהיר ודורש כמות השקייה בינונית.'
         },
       ]
     },
@@ -98,7 +98,7 @@ export default function ProductsPage() {
         { 
           id: 9, 
           name: 'זית אירופי', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/europaea.webp',
           scientificName: 'Olea europaea',
           height: '3-9 מ\'',
           details: 'עץ ירוק-עד שמקורו במזרח התיכון, למרות שמו. העץ מדהים ביופיו ומתאים כמעט לכל גינה ונוף. גובהו משתנה, בין 3 ל-9 מטר, תלוי בגיל ובזן. קצב צמיחתו איטי ודורש כמות השקייה נמוכה עד בינונית.'
@@ -106,7 +106,7 @@ export default function ProductsPage() {
         { 
           id: 10, 
           name: 'לימון', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/limon.webp',
           scientificName: 'Citrus × limon',
           height: '1.5-2.5 מ\'',
           details: 'עץ ירוק-עד שמקורו באסיה. גובהו בין כ-2 מטרים. קצב צמיחתו בינוני ודורש כמות השקייה בינונית. הלימון מלבלב ומניב פירות כמעט בכל חודשי השנה.'
@@ -114,7 +114,7 @@ export default function ProductsPage() {
         { 
           id: 11, 
           name: 'קלמנטינה', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/clementina.webp',
           scientificName: 'Citrus × clementina',
           height: '3-4 מ\'',
           details: 'הקלמנטינה הינה הכלאה בין זן של מנדרינה לבין חושחש (תפוז מר). גובה העץ יכול להגיע ל-4 מטרים ויותר. קצב צמיחתו בינוני ודורש כמות השקייה בינונית עד גבוהה.'
@@ -122,7 +122,7 @@ export default function ProductsPage() {
         { 
           id: 12, 
           name: 'תפוז וושינגטון', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/sinensis.webp',
           scientificName: 'Citrus sinensis',
           height: '2-3 מ\'',
           details: 'תפוז וושינגטון, הידוע גם בשם תפוז טבורי, הינו הכלאה טבעית של התפוז שהתפתחה בברזיל. גובה העץ הינו כ-3 מטרים ויותר. קצב צמיחתו בינוני ודורש כמות השקייה בינונית עד גבוהה.'

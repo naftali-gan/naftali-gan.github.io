@@ -17,7 +17,7 @@ export default function ProductsPage() {
         { 
           id: 1, 
           name: 'King Palm', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/cunninghamiana.webp',
           scientificName: 'Archontophoenix cunninghamiana',
           height: '15-20 m',
           diameter: '20-50 cm',
@@ -26,7 +26,7 @@ export default function ProductsPage() {
         { 
           id: 2, 
           name: 'Foxtail Palm', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/bifurcate.webp',
           scientificName: 'Wodyetia bifurcate',
           height: '6-10 m',
           details: 'A tall, impressive, and beautiful palm with a tropical appearance. Native to Australia. Medium to large size, reaching about 10 meters in height. Medium to fast growth rate and requires moderate watering.'
@@ -34,7 +34,7 @@ export default function ProductsPage() {
         { 
           id: 3, 
           name: 'Royal Palm', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/roystonea.webp',
           scientificName: 'Roystonea',
           height: '15-20 m',
           diameter: '40-70 cm',
@@ -43,7 +43,7 @@ export default function ProductsPage() {
         { 
           id: 4, 
           name: 'Cycas Thouarsii', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/thouarsii.webp',
           scientificName: 'Cycas thouarsii',
           height: '1-2 m',
           details: 'An evergreen cycad native to Madagascar. Small to medium size, reaches about 2 meters in height with leaves spreading 1.5-2 meters wide. Medium growth rate and requires moderate watering.'
@@ -51,7 +51,7 @@ export default function ProductsPage() {
         { 
           id: 5, 
           name: 'Pygmy Date Palm', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/roebelenii.webp',
           scientificName: 'Phoenix roebelenii',
           height: '2-3 m',
           details: 'A small palm that is very easy to grow and maintain. Reaches a height of about 2-3 meters with leaves spreading about 2 meters wide. Medium growth rate and requires moderate watering.'
@@ -59,7 +59,7 @@ export default function ProductsPage() {
         { 
           id: 6, 
           name: 'Sago Palm', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/revoluta.webp',
           scientificName: 'Cycas revoluta',
           height: '1.5-2 m',
           details: 'An evergreen cycad native to Japan. Characterized by a fairly symmetrical appearance and shiny green leaves. Reaches a height of about 2 meters with leaves spreading about 1.5 meters wide. Slow growth rate and requires low to moderate watering.'
@@ -74,7 +74,7 @@ export default function ProductsPage() {
         { 
           id: 7, 
           name: 'Triangle Palm', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/decaryi.webp',
           scientificName: 'Dypsis decaryi',
           height: '5-6 m',
           details: 'A palm native to southern Madagascar. Medium size, about 5-6 meters tall and its leaves can reach a length of about 3 meters. Medium to fast growth rate and requires moderate watering.'
@@ -82,7 +82,7 @@ export default function ProductsPage() {
         { 
           id: 8, 
           name: 'Queen Palm', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/romanzoffiana.webp',
           scientificName: 'Syagrus romanzoffiana',
           height: '15-20 m',
           diameter: '20-50 cm',
@@ -98,7 +98,7 @@ export default function ProductsPage() {
         { 
           id: 9, 
           name: 'European Olive', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/europaea.webp',
           scientificName: 'Olea europaea',
           height: '3-9 m',
           details: 'An evergreen tree native to the Middle East, despite its name. The tree is amazingly beautiful and suitable for almost any garden and landscape. Its height varies between 3 and 9 meters, depending on age and variety. Slow growth rate and requires low to moderate watering.'
@@ -106,7 +106,7 @@ export default function ProductsPage() {
         { 
           id: 10, 
           name: 'Lemon Tree', 
-          image: '/images/product-1.jpg',
+          image: '/images/products/limon.webp',
           scientificName: 'Citrus × limon',
           height: '1.5-2.5 m',
           details: 'An evergreen tree native to Asia. Height of about 2 meters. Medium growth rate and requires moderate watering. The lemon tree blooms and bears fruit almost year-round.'
@@ -114,7 +114,7 @@ export default function ProductsPage() {
         { 
           id: 11, 
           name: 'Clementine Tree', 
-          image: '/images/product-2.jpg',
+          image: '/images/products/clementina.webp',
           scientificName: 'Citrus × clementina',
           height: '3-4 m',
           details: 'The Clementine is a hybrid between a mandarin variety and a bitter orange. The tree can reach 4 meters or more in height. Medium growth rate and requires moderate to high watering.'
@@ -122,7 +122,7 @@ export default function ProductsPage() {
         { 
           id: 12, 
           name: 'Washington Navel Orange', 
-          image: '/images/product-3.jpg',
+          image: '/images/products/sinensis.webp',
           scientificName: 'Citrus sinensis',
           height: '2-3 m',
           details: 'Washington Navel Orange, also known as the navel orange, is a natural mutation of orange that developed in Brazil. The tree is about 3 meters or more in height. Medium growth rate and requires moderate to high watering.'
