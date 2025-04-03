@@ -10,19 +10,23 @@ export default function EnglishLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Remove loading class after component mounts
+  // Add LTR class immediately and set HTML attributes
   useEffect(() => {
+    // First, make sure the body has the right class for LTR
+    document.body.classList.add('ltr');
+    // Set HTML direction and language
+    document.documentElement.lang = 'en';
+    document.documentElement.dir = 'ltr';
+    // Remove loading state to show content
     document.documentElement.classList.remove('js-loading');
   }, []);
 
   return (
-    <>
-      <div className="flex flex-col min-h-screen">
-        <AccessibilityToolbar locale="en" />
-        <Navigation locale="en" />
-        <main className="flex-grow">{children}</main>
-        <Footer locale="en" />
-      </div>
-    </>
+    <div dir="ltr" lang="en" className="flex flex-col min-h-screen">
+      <AccessibilityToolbar locale="en" />
+      <Navigation locale="en" />
+      <main className="flex-grow">{children}</main>
+      <Footer locale="en" />
+    </div>
   );
 } 

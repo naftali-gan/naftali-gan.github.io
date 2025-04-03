@@ -10,19 +10,23 @@ export default function HebrewLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Remove loading class after component mounts
+  // Add RTL class immediately and set HTML attributes
   useEffect(() => {
+    // First, make sure the body has the right class for RTL
+    document.body.classList.add('rtl');
+    // Set HTML direction and language
+    document.documentElement.lang = 'he';
+    document.documentElement.dir = 'rtl';
+    // Remove loading state to show content
     document.documentElement.classList.remove('js-loading');
   }, []);
 
   return (
-    <>
-      <div className="flex flex-col min-h-screen">
-        <AccessibilityToolbar locale="he" />
-        <Navigation locale="he" />
-        <main className="flex-grow">{children}</main>
-        <Footer locale="he" />
-      </div>
-    </>
+    <div dir="rtl" lang="he" className="flex flex-col min-h-screen">
+      <AccessibilityToolbar locale="he" />
+      <Navigation locale="he" />
+      <main className="flex-grow">{children}</main>
+      <Footer locale="he" />
+    </div>
   );
 } 

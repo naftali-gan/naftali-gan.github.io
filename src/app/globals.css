@@ -14,39 +14,69 @@
   }
 }
 
+/* Ensure basic styling is applied */
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-  animation: fadeIn 0.2s ease-in forwards;
 }
 
 /* High contrast mode for accessibility */
 .high-contrast {
   --foreground-rgb: 255, 255, 255;
   --background-rgb: 0, 0, 0;
-  
-  & a, 
-  & button:not([disabled]), 
-  & input, 
-  & select, 
-  & textarea {
-    color: yellow !important;
-    border-color: yellow !important;
-  }
-  
-  & h1, 
-  & h2, 
-  & h3, 
-  & h4, 
-  & h5, 
-  & h6 {
-    color: rgb(50, 255, 50) !important;
-  }
-  
-  & button[disabled] {
-    color: rgb(150, 150, 150) !important;
-    border-color: rgb(150, 150, 150) !important;
-  }
+}
+
+.high-contrast a, 
+.high-contrast button:not([disabled]), 
+.high-contrast input, 
+.high-contrast select, 
+.high-contrast textarea {
+  color: yellow !important;
+  border-color: yellow !important;
+}
+
+.high-contrast h1, 
+.high-contrast h2, 
+.high-contrast h3, 
+.high-contrast h4, 
+.high-contrast h5, 
+.high-contrast h6 {
+  color: rgb(50, 255, 50) !important;
+}
+
+.high-contrast button[disabled] {
+  color: rgb(150, 150, 150) !important;
+  border-color: rgb(150, 150, 150) !important;
 }
 
 /* RTL Support */
@@ -65,16 +95,24 @@ html[dir="rtl"] .mr-auto {
   margin-left: auto;
 }
 
-/* Replace the loading state CSS */
-
-/* Simple loading state */
+/* Update the loading state CSS to fix visibility issues */
 html.js-loading {
-  opacity: 0;
+  visibility: visible !important; /* Make sure content is visible */
+  opacity: 1 !important; /* Ensure full opacity */
 }
 
+/* Remove the transition that might be causing issues */
 html:not(.js-loading) {
-  transition: opacity 0.3s ease;
-  opacity: 1;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Remove the fadeIn animation that might be interfering with CSS loading */
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  /* Remove animation that might be causing issues */
+  /* animation: fadeIn 0.2s ease-in forwards; */
 }
 
 /* Add a tiny delay to prevent flash of unstyled content */
