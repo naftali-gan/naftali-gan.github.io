@@ -110,33 +110,33 @@ const AccessibilityToolbar = ({ locale = 'he' }: AccessibilityToolbarProps) => {
       </button>
       
       {isOpen && (
-        <div className="mt-2 bg-white dark:bg-gray-800 shadow-lg rounded-lg p-4 flex flex-col gap-2 text-sm">
+        <div className="mt-2 bg-white shadow-lg rounded-lg p-4 flex flex-col gap-2 text-sm">
           <h3 className="font-bold text-center">{t.title}</h3>
           
           <button 
             onClick={increaseFontSize}
-            className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded"
+            className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded"
           >
             <FaTextHeight /> <MdKeyboardArrowUp /> {t.increaseFontSize}
           </button>
           
           <button 
             onClick={decreaseFontSize}
-            className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded"
+            className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded"
           >
             <FaTextHeight /> <MdKeyboardArrowDown /> {t.decreaseFontSize}
           </button>
           
           <button 
             onClick={toggleHighContrast}
-            className={`flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded ${highContrast ? 'bg-gray-200 dark:bg-gray-600' : ''}`}
+            className={`flex items-center gap-2 hover:bg-gray-100 p-2 rounded ${highContrast ? 'bg-gray-200' : ''}`}
           >
             <FaAdjust /> {t.highContrast}
           </button>
           
           <button 
             onClick={resetSettings}
-            className="flex items-center gap-2 hover:bg-gray-100 dark:hover:bg-gray-700 p-2 rounded"
+            className="flex items-center gap-2 hover:bg-gray-100 p-2 rounded"
           >
             <FaRedo /> {t.reset}
           </button>

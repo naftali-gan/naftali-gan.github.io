@@ -28,7 +28,7 @@ const LangSwitcher = ({ locale = 'he' }: LangSwitcherProps) => {
   return (
     <Link 
       href={getLocaleUrl()}
-      className="mx-3 py-2 px-4 border border-gray-300 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700"
+      className="mx-3 py-2 px-4 border border-gray-300 rounded-md text-gray-700 hover:bg-gray-100"
     >
       {locale === 'he' ? 'English' : 'עברית'}
     </Link>

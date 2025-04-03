@@ -36,14 +36,14 @@ export default function EnglishHome() {
       </section>
       
       {/* Latest Products Section */}
-      <section className="py-16 px-4 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Our Latest Products</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Product cards would go here */}
             {[1, 2, 3].map((product) => (
-              <div key={product} className="bg-white dark:bg-gray-700 shadow-md rounded-lg overflow-hidden">
+              <div key={product} className="bg-white shadow-md rounded-lg overflow-hidden">
                 <div className="h-64 relative">
                   <Image
                     src={`/images/product-${product}.jpg`}
@@ -54,7 +54,7 @@ export default function EnglishHome() {
                 </div>
                 <div className="p-4">
                   <h3 className="text-xl font-semibold mb-2">Product {product}</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">Product description goes here.</p>
+                  <p className="text-gray-600 mb-4">Product description goes here.</p>
                   <div className="flex justify-between items-center">
                     <span className="text-lg font-bold text-green-600">₪{product * 50}</span>
                     <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">

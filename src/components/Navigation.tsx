@@ -43,7 +43,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
   ];
 
   return (
-    <nav className="bg-white dark:bg-gray-800 shadow-md w-full">
+    <nav className="bg-white shadow-md w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -58,7 +58,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
               <Link
                 key={item.key}
                 href={item.href}
-                className="mx-3 py-2 text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-500"
+                className="mx-3 py-2 text-gray-700 hover:text-green-600"
               >
                 {t[item.key as keyof typeof t]}
               </Link>
@@ -73,7 +73,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none"
               aria-expanded={isMenuOpen}
             >
               {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -84,13 +84,13 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white dark:bg-gray-800 shadow-md">
+        <div className="md:hidden bg-white shadow-md">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link
                 key={item.key}
                 href={item.href}
-                className="block px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-500"
+                className="block px-3 py-2 text-gray-700 hover:text-green-600"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t[item.key as keyof typeof t]}
