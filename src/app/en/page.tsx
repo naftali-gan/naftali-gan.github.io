@@ -38,32 +38,60 @@ export default function EnglishHome() {
       {/* Latest Products Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Latest Products</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Featured Plants</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Product cards would go here */}
-            {[1, 2, 3].map((product) => (
-              <div key={product} className="bg-white shadow-md rounded-lg overflow-hidden">
-                <div className="h-64 relative">
-                  <Image
-                    src={`/images/product-${product}.jpg`}
-                    alt={`Product ${product}`}
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">Product {product}</h3>
-                  <p className="text-gray-600 mb-4">Product description goes here.</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-green-600">₪{product * 50}</span>
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
-                      View Details
-                    </button>
-                  </div>
-                </div>
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/product-1.jpg"
+                  alt="King Palm"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
               </div>
-            ))}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">King Palm</h3>
+                <p className="text-sm text-gray-500 mb-2">Archontophoenix cunninghamiana</p>
+                <p className="text-sm mb-3">Height: 15-20 m</p>
+                <p className="text-sm mb-3">Trunk diameter: 20-50 cm</p>
+                <p className="text-sm text-gray-600">A tall and impressive palm native to Australia. It reaches a height of 12 meters or more.</p>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/product-2.jpg"
+                  alt="Foxtail Palm"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">Foxtail Palm</h3>
+                <p className="text-sm text-gray-500 mb-2">Wodyetia bifurcate</p>
+                <p className="text-sm mb-3">Height: 6-10 m</p>
+                <p className="text-sm text-gray-600">A tall, impressive, and beautiful palm with a tropical appearance. Native to Australia.</p>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/product-3.jpg"
+                  alt="European Olive"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">European Olive</h3>
+                <p className="text-sm text-gray-500 mb-2">Olea europaea</p>
+                <p className="text-sm mb-3">Height: 3-9 m</p>
+                <p className="text-sm text-gray-600">An evergreen tree native to the Middle East, despite its name. The tree is amazingly beautiful and suitable for almost any garden.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

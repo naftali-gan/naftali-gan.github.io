@@ -17,7 +17,6 @@ export default function ProductsPage() {
         { 
           id: 1, 
           name: 'King Palm', 
-          price: 350, 
           image: '/images/product-1.jpg',
           scientificName: 'Archontophoenix cunninghamiana',
           height: '15-20 m',
@@ -27,7 +26,6 @@ export default function ProductsPage() {
         { 
           id: 2, 
           name: 'Foxtail Palm', 
-          price: 300, 
           image: '/images/product-2.jpg',
           scientificName: 'Wodyetia bifurcate',
           height: '6-10 m',
@@ -36,7 +34,6 @@ export default function ProductsPage() {
         { 
           id: 3, 
           name: 'Royal Palm', 
-          price: 400, 
           image: '/images/product-3.jpg',
           scientificName: 'Roystonea',
           height: '15-20 m',
@@ -46,7 +43,6 @@ export default function ProductsPage() {
         { 
           id: 4, 
           name: 'Cycas Thouarsii', 
-          price: 250, 
           image: '/images/product-1.jpg',
           scientificName: 'Cycas thouarsii',
           height: '1-2 m',
@@ -55,7 +51,6 @@ export default function ProductsPage() {
         { 
           id: 5, 
           name: 'Pygmy Date Palm', 
-          price: 200, 
           image: '/images/product-2.jpg',
           scientificName: 'Phoenix roebelenii',
           height: '2-3 m',
@@ -64,7 +59,6 @@ export default function ProductsPage() {
         { 
           id: 6, 
           name: 'Sago Palm', 
-          price: 280, 
           image: '/images/product-3.jpg',
           scientificName: 'Cycas revoluta',
           height: '1.5-2 m',
@@ -80,7 +74,6 @@ export default function ProductsPage() {
         { 
           id: 7, 
           name: 'Triangle Palm', 
-          price: 320, 
           image: '/images/product-1.jpg',
           scientificName: 'Dypsis decaryi',
           height: '5-6 m',
@@ -89,7 +82,6 @@ export default function ProductsPage() {
         { 
           id: 8, 
           name: 'Queen Palm', 
-          price: 350, 
           image: '/images/product-2.jpg',
           scientificName: 'Syagrus romanzoffiana',
           height: '15-20 m',
@@ -106,7 +98,6 @@ export default function ProductsPage() {
         { 
           id: 9, 
           name: 'European Olive', 
-          price: 180, 
           image: '/images/product-3.jpg',
           scientificName: 'Olea europaea',
           height: '3-9 m',
@@ -115,7 +106,6 @@ export default function ProductsPage() {
         { 
           id: 10, 
           name: 'Lemon Tree', 
-          price: 150, 
           image: '/images/product-1.jpg',
           scientificName: 'Citrus × limon',
           height: '1.5-2.5 m',
@@ -124,7 +114,6 @@ export default function ProductsPage() {
         { 
           id: 11, 
           name: 'Clementine Tree', 
-          price: 160, 
           image: '/images/product-2.jpg',
           scientificName: 'Citrus × clementina',
           height: '3-4 m',
@@ -133,7 +122,6 @@ export default function ProductsPage() {
         { 
           id: 12, 
           name: 'Washington Navel Orange', 
-          price: 170, 
           image: '/images/product-3.jpg',
           scientificName: 'Citrus sinensis',
           height: '2-3 m',
@@ -172,13 +160,7 @@ export default function ProductsPage() {
                     <p className="text-sm text-gray-500 mb-2">{product.scientificName}</p>
                     <p className="text-sm mb-3">Height: {product.height}</p>
                     {product.diameter && <p className="text-sm mb-3">Trunk diameter: {product.diameter}</p>}
-                    <p className="text-sm text-gray-600 mb-4 line-clamp-3">{product.details}</p>
-                    <div className="flex justify-between items-center">
-                      <span className="text-lg font-bold text-green-600">₪{product.price}</span>
-                      <button className="bg-blue-600 hover:bg-blue-700 transition-colors text-white px-4 py-2 rounded">
-                        More Details
-                      </button>
-                    </div>
+                    <p className="text-sm text-gray-600 mb-4">{product.details}</p>
                   </div>
                 </div>
               ))}

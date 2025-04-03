@@ -38,32 +38,60 @@ export default function HebrewHome() {
       {/* Latest Products Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">המוצרים החדשים שלנו</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">הצמחים המובחרים שלנו</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Product cards would go here */}
-            {[1, 2, 3].map((product) => (
-              <div key={product} className="bg-white shadow-md rounded-lg overflow-hidden">
-                <div className="h-64 relative">
-                  <Image
-                    src={`/images/product-${product}.jpg`}
-                    alt={`Product ${product}`}
-                    fill
-                    style={{ objectFit: "cover" }}
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold mb-2">מוצר {product}</h3>
-                  <p className="text-gray-600 mb-4">תיאור המוצר יופיע כאן.</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-green-600">₪{product * 50}</span>
-                    <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
-                      פרטים נוספים
-                    </button>
-                  </div>
-                </div>
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/product-1.jpg"
+                  alt="דקל טבעות"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
               </div>
-            ))}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">דקל טבעות</h3>
+                <p className="text-sm text-gray-500 mb-2">Archontophoenix cunninghamiana</p>
+                <p className="text-sm mb-3">גובה: 15-20 מ'</p>
+                <p className="text-sm mb-3">קוטר גזע: 20-50 ס"מ</p>
+                <p className="text-sm text-gray-600">דקל גבוה ומרשים שמקורו באוסטרליה. גודלו בינוני עד גדול, גובהו מגיע ל-12 מטרים ואף יותר.</p>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/product-2.jpg"
+                  alt="דקל זנב שועל"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">דקל זנב שועל</h3>
+                <p className="text-sm text-gray-500 mb-2">Wodyetia bifurcate</p>
+                <p className="text-sm mb-3">גובה: 6-10 מ'</p>
+                <p className="text-sm text-gray-600">דקל גבוה, מרשים ויפהפה בעל מראה טרופי. מקורו באוסטרליה. גודלו בינוני עד גדול, גובהו מגיע לכ-10 מטרים.</p>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/product-3.jpg"
+                  alt="זית אירופי"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-2">זית אירופי</h3>
+                <p className="text-sm text-gray-500 mb-2">Olea europaea</p>
+                <p className="text-sm mb-3">גובה: 3-9 מ'</p>
+                <p className="text-sm text-gray-600">עץ ירוק-עד שמקורו במזרח התיכון, למרות שמו. העץ מדהים ביופיו ומתאים כמעט לכל גינה ונוף.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>

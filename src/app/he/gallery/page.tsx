@@ -18,22 +18,22 @@ export default function GalleryPage() {
     },
     {
       id: 2,
-      title: 'צמחי פנים',
-      description: 'מגוון צמחי פנים מיוחדים',
+      title: 'דקל טבעות',
+      description: 'דקל גבוה ומרשים שמקורו באוסטרליה',
       image: '/images/product-1.jpg',
-      category: 'צמחים'
+      category: 'דקלים'
     },
     {
       id: 3,
-      title: 'פרחי גינה',
-      description: 'פרחים ססגוניים לגינה',
+      title: 'דקל זנב שועל',
+      description: 'דקל יפהפה בעל מראה טרופי',
       image: '/images/product-2.jpg',
-      category: 'פרחים'
+      category: 'דקלים'
     },
     {
       id: 4,
-      title: 'אזור הקקטוסים',
-      description: 'אוסף הקקטוסים והסוקולנטים שלנו',
+      title: 'ציקס רבולטה',
+      description: 'ציקס ירוק עד שמקורו ביפן',
       image: '/images/product-3.jpg',
       category: 'צמחים'
     },
@@ -46,31 +46,31 @@ export default function GalleryPage() {
     },
     {
       id: 6,
-      title: 'אירוע במשתלה',
-      description: 'אירוע חודשי במשתלה',
+      title: 'דקל המלך',
+      description: 'דקל מרשים שמקורו במרכז ודרום אמריקה',
       image: '/images/product-1.jpg',
-      category: 'אירועים'
+      category: 'דקלים'
     },
     {
       id: 7,
-      title: 'עציצים מעוצבים',
-      description: 'עציצים ייחודיים בעיצוב אישי',
+      title: 'עצי פרי',
+      description: 'מגוון עצי פרי לגינה ולחצר',
       image: '/images/product-2.jpg',
-      category: 'עיצוב'
+      category: 'עצים'
     },
     {
       id: 8,
-      title: 'בית חם לצמחים',
+      title: 'חממה לגידול צמחים',
       description: 'חממה חדשה שנפתחה לאחרונה',
       image: '/images/product-3.jpg',
       category: 'משתלה'
     },
     {
       id: 9,
-      title: 'שתילים צעירים',
-      description: 'שתילים חדשים לעונה הקרובה',
+      title: 'זית אירופי',
+      description: 'עץ ירוק-עד שמתאים כמעט לכל גינה',
       image: '/images/hero-background.jpg',
-      category: 'צמחים'
+      category: 'עצים'
     },
   ];
 
@@ -85,10 +85,10 @@ export default function GalleryPage() {
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           <button className="bg-green-600 text-white px-4 py-2 rounded-full">הכל</button>
           <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">משתלה</button>
+          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">דקלים</button>
           <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">צמחים</button>
-          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">פרחים</button>
+          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">עצים</button>
           <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">עיצוב</button>
-          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">אירועים</button>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

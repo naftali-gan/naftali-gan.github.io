@@ -18,22 +18,22 @@ export default function GalleryPage() {
     },
     {
       id: 2,
-      title: 'Indoor Plants',
-      description: 'A variety of special indoor plants',
+      title: 'King Palm',
+      description: 'A tall and impressive palm native to Australia',
       image: '/images/product-1.jpg',
-      category: 'Plants'
+      category: 'Palms'
     },
     {
       id: 3,
-      title: 'Garden Flowers',
-      description: 'Colorful flowers for your garden',
+      title: 'Foxtail Palm',
+      description: 'Beautiful palm with a tropical appearance',
       image: '/images/product-2.jpg',
-      category: 'Flowers'
+      category: 'Palms'
     },
     {
       id: 4,
-      title: 'Cactus Area',
-      description: 'Our collection of cacti and succulents',
+      title: 'Sago Palm',
+      description: 'An evergreen cycad native to Japan',
       image: '/images/product-3.jpg',
       category: 'Plants'
     },
@@ -46,17 +46,17 @@ export default function GalleryPage() {
     },
     {
       id: 6,
-      title: 'Nursery Event',
-      description: 'Monthly event at the nursery',
+      title: 'Royal Palm',
+      description: 'Impressive palm native to Central and South America',
       image: '/images/product-1.jpg',
-      category: 'Events'
+      category: 'Palms'
     },
     {
       id: 7,
-      title: 'Designer Planters',
-      description: 'Unique planters with custom designs',
+      title: 'Fruit Trees',
+      description: 'Various fruit trees for garden and yard',
       image: '/images/product-2.jpg',
-      category: 'Design'
+      category: 'Trees'
     },
     {
       id: 8,
@@ -67,10 +67,10 @@ export default function GalleryPage() {
     },
     {
       id: 9,
-      title: 'Young Seedlings',
-      description: 'New seedlings for the upcoming season',
+      title: 'European Olive',
+      description: 'Evergreen tree suitable for almost any garden',
       image: '/images/hero-background.jpg',
-      category: 'Plants'
+      category: 'Trees'
     },
   ];
 
@@ -85,10 +85,10 @@ export default function GalleryPage() {
         <div className="mb-8 flex flex-wrap justify-center gap-2">
           <button className="bg-green-600 text-white px-4 py-2 rounded-full">All</button>
           <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Nursery</button>
+          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Palms</button>
           <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Plants</button>
-          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Flowers</button>
+          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Trees</button>
           <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Design</button>
-          <button className="bg-white border border-green-600 text-green-600 hover:bg-green-50 px-4 py-2 rounded-full">Events</button>
         </div>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
