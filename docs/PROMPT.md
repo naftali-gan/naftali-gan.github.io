@@ -5,15 +5,15 @@ Build a website for Naftali Gan, a nursery in Israel, by following these steps:
 1. **Use Yarn as the Package Manager**  
     - Utilize **Yarn** for managing project dependencies and running scripts (e.g., `yarn install`, `yarn build`, `yarn dev`), ensuring a consistent and efficient development workflow.
 
-2. **Implement TypeScript for Type Safety**  
-    - Use **TypeScript** throughout the project to add static typing, improving code quality, catching errors early, and enhancing maintainability and developer experience.
-
-3. **Style with Tailwind CSS**  
-    - Apply **Tailwind CSS** for a utility-first styling approach, enabling rapid development of a consistent, responsive, and customizable design system.
-
-4. **Develop a Friendly, Light, and Fast Website**  
+2. **Develop a Friendly, Light, and Fast Website**  
    - Use **Next.js** with **Static Site Generation (SSG)** to create a user-friendly, lightweight, and high-performance website.  
    - Leverage SSG to pre-render pages at build time for faster load speeds and better SEO.
+
+3. **Implement TypeScript for Type Safety**  
+    - Use **TypeScript** throughout the project to add static typing, improving code quality, catching errors early, and enhancing maintainability and developer experience.
+
+4. **Style with Tailwind CSS**  
+    - Apply **Tailwind CSS** for a utility-first styling approach, enabling rapid development of a consistent, responsive, and customizable design system.
 
 5. **Optimize for Marketing with SEO**  
    - Implement **search engine optimization (SEO)** techniques, such as meta tags, alt text for images, and keyword-rich content, to improve visibility on search engines and enhance marketing effectiveness.

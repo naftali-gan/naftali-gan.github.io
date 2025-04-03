@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "Naftali Gan | Plants and Gardening Supplies",
+    "description": "Naftali Gan - A nursery providing quality plants and gardening products since 2000"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "gallery": "Gallery",
+    "contact": "Contact"
+  },
+  "home": {
+    "welcome": "Welcome to Naftali Gan",
+    "intro": "A nursery providing quality plants and gardening products since 2000",
+    "cta": "Come visit us",
+    "latestProducts": "Our latest products"
+  },
+  "about": {
+    "title": "About Naftali Gan",
+    "story": "Our Story",
+    "mission": "Our Mission",
+    "values": "Our Values"
+  },
+  "products": {
+    "title": "Our Products",
+    "categories": "Categories",
+    "bestsellers": "Bestsellers",
+    "new": "New"
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "A glimpse of Naftali Gan"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "openingHours": "Opening Hours",
+    "sendMessage": "Send Message"
+  },
+  "accessibility": {
+    "title": "Accessibility",
+    "increaseFontSize": "Increase Font Size",
+    "decreaseFontSize": "Decrease Font Size",
+    "highContrast": "High Contrast",
+    "reset": "Reset Settings"
+  },
+  "footer": {
+    "rights": "All rights reserved to Naftali Gan",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+} 

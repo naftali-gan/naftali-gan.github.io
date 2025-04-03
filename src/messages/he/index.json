@@ -1,0 +1,55 @@
+{
+  "metadata": {
+    "title": "גן נפתלי | משתלה לצמחים ואביזרי גינון",
+    "description": "גן נפתלי - משתלה המספקת צמחים איכותיים ומוצרי גינון מאז שנת 2000"
+  },
+  "navigation": {
+    "home": "בית",
+    "about": "אודות",
+    "products": "מוצרים",
+    "gallery": "גלריה",
+    "contact": "צור קשר"
+  },
+  "home": {
+    "welcome": "ברוכים הבאים לגן נפתלי",
+    "intro": "משתלה המספקת צמחים איכותיים ומוצרי גינון מאז שנת 2000",
+    "cta": "בואו לבקר אותנו",
+    "latestProducts": "המוצרים החדשים שלנו"
+  },
+  "about": {
+    "title": "אודות גן נפתלי",
+    "story": "הסיפור שלנו",
+    "mission": "המשימה שלנו",
+    "values": "הערכים שלנו"
+  },
+  "products": {
+    "title": "המוצרים שלנו",
+    "categories": "קטגוריות",
+    "bestsellers": "הנמכרים ביותר",
+    "new": "חדש"
+  },
+  "gallery": {
+    "title": "גלריה",
+    "subtitle": "הצצה לגן נפתלי"
+  },
+  "contact": {
+    "title": "צור קשר",
+    "address": "כתובת",
+    "phone": "טלפון",
+    "email": "אימייל",
+    "openingHours": "שעות פתיחה",
+    "sendMessage": "שלח הודעה"
+  },
+  "accessibility": {
+    "title": "נגישות",
+    "increaseFontSize": "הגדל גופן",
+    "decreaseFontSize": "הקטן גופן",
+    "highContrast": "ניגודיות גבוהה",
+    "reset": "איפוס הגדרות"
+  },
+  "footer": {
+    "rights": "כל הזכויות שמורות לגן נפתלי",
+    "privacy": "מדיניות פרטיות",
+    "terms": "תנאי שימוש"
+  }
+} 
