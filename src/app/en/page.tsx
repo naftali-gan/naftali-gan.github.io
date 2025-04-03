@@ -95,6 +95,76 @@ export default function EnglishHome() {
           </div>
         </div>
       </section>
+      
+      {/* About Section */}
+      <section className="py-16 px-4" id="about">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">About Our Nursery</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div className="space-y-4">
+              <p className="text-lg">At Naftali's Nursery in Kfar Yabetz, we specialize in marketing and selling mature palm trees for immediate planting, including Archontophoenix, Foxtail Palm, King Palm, Robelini, Triangle Palm, Coconut Palm, and more. We also offer shaped citrus trees that bear edible fruit.</p>
+              <p className="text-lg">Additionally, the nursery has a variety of olive trees in all sizes and other ornamental trees such as Cycas thouarsii and Cycas revoluta.</p>
+              <p className="text-lg">We sell to individuals and businesses, as well as wholesale. Our customers include private homes, gardeners, building committees, institutions, municipalities, councils, penthouses, hotels, and more.</p>
+              <p className="text-lg">All trees in the nursery are sold without intermediary gaps, directly from the grower.</p>
+              
+              <div className="mt-6">
+                <Link
+                  href="/en/products"
+                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
+                >
+                  View our plant list
+                </Link>
+              </div>
+            </div>
+            
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <Image
+                src="/images/nursery.jpg"
+                alt="Naftali's Nursery"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Contact Section */}
+      <section className="py-16 px-4 bg-green-50" id="contact">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="relative h-80 rounded-lg overflow-hidden">
+              <Image
+                src="/images/location.jpg"
+                alt="Nursery Location"
+                fill
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg p-6">
+              <p className="text-lg mb-4">The nursery is located in Kfar Yabetz in the Sharon region.</p>
+              <p className="text-lg mb-4">You can visit us during opening hours or outside of opening hours by prior arrangement.</p>
+              <p className="text-lg font-semibold mb-2">For any questions and to arrange a visit, contact us by phone:</p>
+              <p className="text-xl mb-1 font-medium">050-5263429</p>
+              <p className="text-xl font-medium">09-7963181</p>
+              
+              <div className="mt-6">
+                <Link
+                  href="https://maps.app.goo.gl/Vf2LJzSxn4DGbsSk9"
+                  target="_blank"
+                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
+                >
+                  Directions
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 } 
