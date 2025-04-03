@@ -1,32 +1,35 @@
-'use client';
+import { ClientAccessibilityToolbar, ClientFooter, ClientNavigation, DocumentSetup } from '@/components/ClientWrapper';
+import { Metadata } from 'next';
+import Script from 'next/script';
+import '../globals.css';
 
-import AccessibilityToolbar from '@/components/AccessibilityToolbar';
-import Footer from '@/components/Footer';
-import Navigation from '@/components/Navigation';
-import { useEffect } from 'react';
+export const metadata: Metadata = {
+  title: 'Naftali Gan | Plants and Gardening Supplies Nursery',
+  description: 'Naftali Gan - A nursery providing quality plants and gardening products since 2000',
+};
 
 export default function EnglishLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  // Add LTR class immediately and set HTML attributes
-  useEffect(() => {
-    // First, make sure the body has the right class for LTR
-    document.body.classList.add('ltr');
-    // Set HTML direction and language
-    document.documentElement.lang = 'en';
-    document.documentElement.dir = 'ltr';
-    // Remove loading state to show content
-    document.documentElement.classList.remove('js-loading');
-  }, []);
-
   return (
-    <div dir="ltr" lang="en" className="flex flex-col min-h-screen">
-      <AccessibilityToolbar locale="en" />
-      <Navigation locale="en" />
-      <main className="flex-grow">{children}</main>
-      <Footer locale="en" />
-    </div>
+    <>
+      <Script id="set-html-dir-lang">
+        {`
+          document.documentElement.lang = 'en';
+          document.documentElement.dir = 'ltr';
+        `}
+      </Script>
+      <DocumentSetup />
+      <div className="flex flex-col min-h-screen">
+        <ClientAccessibilityToolbar locale="en" />
+        <ClientNavigation locale="en" />
+        <div className="flex-grow">
+          {children}
+        </div>
+        <ClientFooter locale="en" />
+      </div>
+    </>
   );
 } 
