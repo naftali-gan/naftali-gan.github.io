@@ -40,58 +40,183 @@ export default function EnglishHome() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Our Featured Plants</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/images/product-1.jpg"
+                  src="/images/products/cunninghamiana.webp"
                   alt="King Palm"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">King Palm</h3>
-                <p className="text-sm text-gray-500 mb-2">Archontophoenix cunninghamiana</p>
-                <p className="text-sm mb-3">Height: 15-20 m</p>
-                <p className="text-sm mb-3">Trunk diameter: 20-50 cm</p>
-                <p className="text-sm text-gray-600">A tall and impressive palm native to Australia. It reaches a height of 12 meters or more.</p>
+                <h3 className="text-xl font-semibold text-center">King Palm</h3>
               </div>
             </div>
             
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/images/product-2.jpg"
+                  src="/images/products/bifurcate.webp"
                   alt="Foxtail Palm"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">Foxtail Palm</h3>
-                <p className="text-sm text-gray-500 mb-2">Wodyetia bifurcate</p>
-                <p className="text-sm mb-3">Height: 6-10 m</p>
-                <p className="text-sm text-gray-600">A tall, impressive, and beautiful palm with a tropical appearance. Native to Australia.</p>
+                <h3 className="text-xl font-semibold text-center">Foxtail Palm</h3>
               </div>
             </div>
             
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/images/product-3.jpg"
+                  src="/images/products/roystonea.webp"
+                  alt="Royal Palm"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Royal Palm</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/thouarsii.webp"
+                  alt="Cycas Thouarsii"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Cycas Thouarsii</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/roebelenii.webp"
+                  alt="Robelini Palm"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Robelini Palm</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/revoluta.webp"
+                  alt="Cycas Revoluta"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Cycas Revoluta</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/europaea.webp"
                   alt="European Olive"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">European Olive</h3>
-                <p className="text-sm text-gray-500 mb-2">Olea europaea</p>
-                <p className="text-sm mb-3">Height: 3-9 m</p>
-                <p className="text-sm text-gray-600">An evergreen tree native to the Middle East, despite its name. The tree is amazingly beautiful and suitable for almost any garden.</p>
+                <h3 className="text-xl font-semibold text-center">European Olive</h3>
               </div>
             </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/limon.webp"
+                  alt="Lemon Tree"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Lemon Tree</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/clementina.webp"
+                  alt="Clementine Tree"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Clementine Tree</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/sinensis.webp"
+                  alt="Washington Orange"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Washington Orange</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/decaryi.webp"
+                  alt="Triangle Palm"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Triangle Palm</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/romanzoffiana.webp"
+                  alt="Queen Palm"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">Queen Palm</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <Link
+              href="/en/products"
+              className="bg-green-600 hover:bg-green-700 transition-colors text-white px-8 py-3 rounded-md text-lg font-medium"
+            >
+              View All Products
+            </Link>
           </div>
         </div>
       </section>

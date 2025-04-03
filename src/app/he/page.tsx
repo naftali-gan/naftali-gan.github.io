@@ -40,58 +40,183 @@ export default function HebrewHome() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">הצמחים המובחרים שלנו</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/images/product-1.jpg"
+                  src="/images/products/cunninghamiana.webp"
                   alt="דקל טבעות"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">דקל טבעות</h3>
-                <p className="text-sm text-gray-500 mb-2">Archontophoenix cunninghamiana</p>
-                <p className="text-sm mb-3">גובה: 15-20 מ'</p>
-                <p className="text-sm mb-3">קוטר גזע: 20-50 ס"מ</p>
-                <p className="text-sm text-gray-600">דקל גבוה ומרשים שמקורו באוסטרליה. גודלו בינוני עד גדול, גובהו מגיע ל-12 מטרים ואף יותר.</p>
+                <h3 className="text-xl font-semibold text-center">דקל טבעות</h3>
               </div>
             </div>
             
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/images/product-2.jpg"
+                  src="/images/products/bifurcate.webp"
                   alt="דקל זנב שועל"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">דקל זנב שועל</h3>
-                <p className="text-sm text-gray-500 mb-2">Wodyetia bifurcate</p>
-                <p className="text-sm mb-3">גובה: 6-10 מ'</p>
-                <p className="text-sm text-gray-600">דקל גבוה, מרשים ויפהפה בעל מראה טרופי. מקורו באוסטרליה. גודלו בינוני עד גדול, גובהו מגיע לכ-10 מטרים.</p>
+                <h3 className="text-xl font-semibold text-center">דקל זנב שועל</h3>
               </div>
             </div>
             
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <div className="h-64 relative">
                 <Image
-                  src="/images/product-3.jpg"
+                  src="/images/products/roystonea.webp"
+                  alt="דקל המלך"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">דקל המלך</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/thouarsii.webp"
+                  alt="ציקס טורסאי"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">ציקס טורסאי</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/roebelenii.webp"
+                  alt="דקל רובליני"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">דקל רובליני</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/revoluta.webp"
+                  alt="ציקס רבולטה"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">ציקס רבולטה</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/europaea.webp"
                   alt="זית אירופי"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold mb-2">זית אירופי</h3>
-                <p className="text-sm text-gray-500 mb-2">Olea europaea</p>
-                <p className="text-sm mb-3">גובה: 3-9 מ'</p>
-                <p className="text-sm text-gray-600">עץ ירוק-עד שמקורו במזרח התיכון, למרות שמו. העץ מדהים ביופיו ומתאים כמעט לכל גינה ונוף.</p>
+                <h3 className="text-xl font-semibold text-center">זית אירופי</h3>
               </div>
             </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/limon.webp"
+                  alt="לימון"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">לימון</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/clementina.webp"
+                  alt="קלמנטינה"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">קלמנטינה</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/sinensis.webp"
+                  alt="תפוז וושינגטון"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">תפוז וושינגטון</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/decaryi.webp"
+                  alt="דקל משולש"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">דקל משולש</h3>
+              </div>
+            </div>
+            
+            <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              <div className="h-64 relative">
+                <Image
+                  src="/images/products/romanzoffiana.webp"
+                  alt="דקל המלכה"
+                  fill
+                  style={{ objectFit: "cover" }}
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-center">דקל המלכה</h3>
+              </div>
+            </div>
+          </div>
+          
+          <div className="mt-10 text-center">
+            <Link
+              href="/he/products"
+              className="bg-green-600 hover:bg-green-700 transition-colors text-white px-8 py-3 rounded-md text-lg font-medium"
+            >
+              צפו בכל המוצרים
+            </Link>
           </div>
         </div>
       </section>
