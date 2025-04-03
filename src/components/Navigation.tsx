@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -47,8 +48,17 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link href={locale === 'he' ? '/he' : '/en'} className="font-extrabold text-2xl lg:text-3xl text-green-600">
-              {locale === 'he' ? 'משתלת נפתלי' : 'Naftali\'s Nursery'}
+            <Link href={locale === 'he' ? '/he' : '/en'} className="flex items-center">
+              <Image 
+                src="/images/logo.png" 
+                alt="Naftali's Nursery Logo" 
+                width={48} 
+                height={48} 
+                className="me-3"
+              />
+              <span className="font-extrabold text-3xl lg:text-5xl text-green-600">
+                {locale === 'he' ? 'משתלת נפתלי' : 'Naftali\'s Nursery'}
+              </span>
             </Link>
           </div>
 
