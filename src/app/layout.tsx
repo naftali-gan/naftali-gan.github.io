@@ -1,7 +1,12 @@
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+// Configure Open Sans font with both Latin and Hebrew subsets
+const openSans = Open_Sans({ 
+  subsets: ["latin", "hebrew"],
+  variable: '--font-open-sans',
+  display: 'swap',
+});
 
 export default function RootLayout({
   children,
@@ -10,9 +15,9 @@ export default function RootLayout({
 }>) {
   // We don't set lang or dir here, they will be set in the language-specific layouts
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning className={openSans.variable}>
       <head />
-      <body className={inter.className}>{children}</body>
+      <body className={openSans.className}>{children}</body>
     </html>
   );
 } 

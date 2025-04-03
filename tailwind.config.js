@@ -8,6 +8,9 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['var(--font-open-sans)', 'Open Sans', 'Open Sans Hebrew', 'sans-serif'],
+      },
       colors: {
         'green': {
           DEFAULT: '#34D399',
