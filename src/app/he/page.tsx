@@ -199,13 +199,13 @@ export default function HebrewHome() {
               <div className="h-64 relative">
                 <Image
                   src="/images/products/romanzoffiana.webp"
-                  alt="דקל המלכה"
+                  alt="דקל המלך"
                   fill
                   style={{ objectFit: "cover" }}
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל המלכה</h3>
+                <h3 className="text-xl font-semibold text-center">דקל המלך</h3>
               </div>
             </div>
           </div>
