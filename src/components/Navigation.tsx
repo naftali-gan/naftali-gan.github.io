@@ -43,11 +43,11 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
   ];
 
   return (
-    <nav className="bg-white shadow-md w-full">
+    <nav className="bg-white shadow-md w-full py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link href={locale === 'he' ? '/he' : '/en'} className="font-bold text-xl text-green-600">
+            <Link href={locale === 'he' ? '/he' : '/en'} className="font-extrabold text-2xl lg:text-3xl text-green-600">
               משתלת נפתלי | Naftali&apos;s Nursery
             </Link>
           </div>
@@ -58,7 +58,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
               <Link
                 key={item.key}
                 href={item.href}
-                className="mx-3 py-2 text-gray-700 hover:text-green-600"
+                className="mx-4 py-2 text-gray-700 hover:text-green-600 font-bold text-lg"
               >
                 {t[item.key as keyof typeof t]}
               </Link>
@@ -90,7 +90,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
               <Link
                 key={item.key}
                 href={item.href}
-                className="block px-3 py-2 text-gray-700 hover:text-green-600"
+                className="block px-3 py-2 text-gray-700 hover:text-green-600 font-bold text-lg"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {t[item.key as keyof typeof t]}
