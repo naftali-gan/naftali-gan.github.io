@@ -54,7 +54,7 @@ export default function Carousel({
       <div className={`absolute inset-0 ${overlayClassName}`} />
       
       {images.length > 1 && (
-        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
           {images.map((_, index) => (
             <button
               key={index}
