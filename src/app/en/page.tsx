@@ -1,4 +1,5 @@
 import Carousel from '@/components/Carousel';
+import FeaturedProducts from '@/components/product/FeaturedProducts';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +10,22 @@ export const metadata: Metadata = {
 };
 
 export default function EnglishHome() {
+  // Featured products data
+  const featuredProducts = [
+    { id: '1', image: '/images/products/cunninghamiana.webp', name: 'King Palm' },
+    { id: '2', image: '/images/products/bifurcate.webp', name: 'Foxtail Palm' },
+    { id: '3', image: '/images/products/roystonea.webp', name: 'Royal Palm' },
+    { id: '4', image: '/images/products/thouarsii.webp', name: 'Cycas Thouarsii' },
+    { id: '5', image: '/images/products/roebelenii.webp', name: 'Robelini Palm' },
+    { id: '6', image: '/images/products/revoluta.webp', name: 'Cycas Revoluta' },
+    { id: '7', image: '/images/products/europaea.webp', name: 'European Olive' },
+    { id: '8', image: '/images/products/limon.webp', name: 'Lemon Tree' },
+    { id: '9', image: '/images/products/clementina.webp', name: 'Clementine Tree' },
+    { id: '10', image: '/images/products/sinensis.webp', name: 'Washington Orange' },
+    { id: '11', image: '/images/products/decaryi.webp', name: 'Triangle Palm' },
+    { id: '12', image: '/images/products/romanzoffiana.webp', name: 'Queen Palm' },
+  ];
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -69,222 +86,41 @@ export default function EnglishHome() {
         </div>
       </section>
       
-      {/* Latest Products Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Featured Plants</h2>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/cunninghamiana.webp"
-                  alt="King Palm"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">King Palm</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/bifurcate.webp"
-                  alt="Foxtail Palm"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Foxtail Palm</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/roystonea.webp"
-                  alt="Royal Palm"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Royal Palm</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/thouarsii.webp"
-                  alt="Cycas Thouarsii"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Cycas Thouarsii</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/roebelenii.webp"
-                  alt="Robelini Palm"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Robelini Palm</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/revoluta.webp"
-                  alt="Cycas Revoluta"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Cycas Revoluta</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/europaea.webp"
-                  alt="European Olive"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">European Olive</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/limon.webp"
-                  alt="Lemon Tree"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Lemon Tree</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/clementina.webp"
-                  alt="Clementine Tree"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Clementine Tree</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/sinensis.webp"
-                  alt="Washington Orange"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Washington Orange</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/decaryi.webp"
-                  alt="Triangle Palm"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Triangle Palm</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/romanzoffiana.webp"
-                  alt="Queen Palm"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">Queen Palm</h3>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-10 text-center">
-            <Link
-              href="/en/products"
-              className="bg-green-600 hover:bg-green-700 transition-colors text-white px-8 py-3 rounded-md text-lg font-medium"
-            >
-              View All Products
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Featured Products Section */}
+      <FeaturedProducts
+        title="Our Featured Plants"
+        ctaText="View All Products"
+        ctaLink="/en/products"
+        products={featuredProducts}
+      />
       
       {/* Contact Section */}
-      <section className="py-16 px-4 bg-green-50" id="contact">
+      <section className="py-16 px-4" id="contact">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative h-80 rounded-lg overflow-hidden">
-              <Image
-                src="/images/location.jpg"
-                alt="Nursery Location"
-                fill
-                style={{ objectFit: "cover" }}
-              />
+            <div className="relative h-96 rounded-lg overflow-hidden">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3378.0005908483936!2d34.92618397619365!3d32.18966587326275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d41ad6797147f%3A0x38ff7cb06b32804!2sKfar%20Yabetz!5e0!3m2!1sen!2sil!4v1702391520425!5m2!1sen!2sil" 
+                width="100%" 
+                height="100%" 
+                style={{border:0}} 
+                allowFullScreen={false} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
             
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <p className="text-lg mb-4">The nursery is located in Kfar Yabetz in the Sharon region.</p>
-              <p className="text-lg mb-4">You can visit us during opening hours or outside of opening hours by prior arrangement.</p>
-              <p className="text-lg font-semibold mb-2">For any questions and to arrange a visit, contact us by phone:</p>
-              <p className="text-xl mb-1 font-medium">050-5263429</p>
-              <p className="text-xl font-medium">09-7963181</p>
-              
-              <div className="mt-6">
-                <Link
-                  href="https://maps.app.goo.gl/Vf2LJzSxn4DGbsSk9"
-                  target="_blank"
-                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
-                >
-                  Directions
-                </Link>
+            <div className="space-y-4">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
+                <p className="mb-2"><strong>Address:</strong> Kfar Yabetz, Central District, Israel</p>
+                <p className="mb-2"><strong>Phone:</strong> +972 52-347-7087</p>
+                <p className="mb-2"><strong>Email:</strong> contact@naftalinursery.com</p>
+                <p className="mb-4"><strong>Hours:</strong> Sunday-Friday 8:00 AM - 5:00 PM, Saturday Closed</p>
+                
+                <p className="text-gray-600">For directions or any questions, please don&apos;t hesitate to call us!</p>
               </div>
             </div>
           </div>

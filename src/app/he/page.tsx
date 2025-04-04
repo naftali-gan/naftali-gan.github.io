@@ -1,4 +1,5 @@
 import Carousel from '@/components/Carousel';
+import FeaturedProducts from '@/components/product/FeaturedProducts';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -9,6 +10,22 @@ export const metadata: Metadata = {
 };
 
 export default function HebrewHome() {
+  // Featured products data
+  const featuredProducts = [
+    { id: '1', image: '/images/products/cunninghamiana.webp', name: 'דקל טבעות' },
+    { id: '2', image: '/images/products/bifurcate.webp', name: 'דקל זנב שועל' },
+    { id: '3', image: '/images/products/roystonea.webp', name: 'דקל המלך' },
+    { id: '4', image: '/images/products/thouarsii.webp', name: 'ציקס טורסאי' },
+    { id: '5', image: '/images/products/roebelenii.webp', name: 'דקל רובליני' },
+    { id: '6', image: '/images/products/revoluta.webp', name: 'ציקס רבולטה' },
+    { id: '7', image: '/images/products/europaea.webp', name: 'זית אירופי' },
+    { id: '8', image: '/images/products/limon.webp', name: 'לימון' },
+    { id: '9', image: '/images/products/clementina.webp', name: 'קלמנטינה' },
+    { id: '10', image: '/images/products/sinensis.webp', name: 'תפוז וושינגטון' },
+    { id: '11', image: '/images/products/decaryi.webp', name: 'דקל משולש' },
+    { id: '12', image: '/images/products/romanzoffiana.webp', name: 'דקל המלך' },
+  ];
+
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
@@ -69,223 +86,43 @@ export default function HebrewHome() {
         </div>
       </section>
       
-      {/* Latest Products Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">הצמחים המובחרים שלנו</h2>
-          
-          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/cunninghamiana.webp"
-                  alt="דקל טבעות"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל טבעות</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/bifurcate.webp"
-                  alt="דקל זנב שועל"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל זנב שועל</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/roystonea.webp"
-                  alt="דקל המלך"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל המלך</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/thouarsii.webp"
-                  alt="ציקס טורסאי"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">ציקס טורסאי</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/roebelenii.webp"
-                  alt="דקל רובליני"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל רובליני</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/revoluta.webp"
-                  alt="ציקס רבולטה"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">ציקס רבולטה</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/europaea.webp"
-                  alt="זית אירופי"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">זית אירופי</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/limon.webp"
-                  alt="לימון"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">לימון</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/clementina.webp"
-                  alt="קלמנטינה"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">קלמנטינה</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/sinensis.webp"
-                  alt="תפוז וושינגטון"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">תפוז וושינגטון</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/decaryi.webp"
-                  alt="דקל משולש"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל משולש</h3>
-              </div>
-            </div>
-            
-            <div className="bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="h-64 relative">
-                <Image
-                  src="/images/products/romanzoffiana.webp"
-                  alt="דקל המלך"
-                  fill
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-xl font-semibold text-center">דקל המלך</h3>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mt-10 text-center">
-            <Link
-              href="/he/products"
-              className="bg-green-600 hover:bg-green-700 transition-colors text-white px-8 py-3 rounded-md text-lg font-medium"
-            >
-              צפו בכל המוצרים
-            </Link>
-          </div>
-        </div>
-      </section>
+      {/* Featured Products Section */}
+      <FeaturedProducts
+        title="הצמחים המובחרים שלנו"
+        ctaText="צפו בכל המוצרים"
+        ctaLink="/he/products"
+        products={featuredProducts}
+        isRTL={true}
+      />
       
       {/* Contact Section */}
-      <section className="py-16 px-4 bg-green-50" id="contact">
+      <section className="py-16 px-4" id="contact">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">צרו איתנו קשר</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">צרו קשר</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white shadow-md rounded-lg p-6">
-              <p className="text-lg mb-4">המשתלה ממוקמת במושב כפר יעבץ שבשרון.</p>
-              <p className="text-lg mb-4">ניתן לבוא ולבקר אצלנו בשעות הפעילות. ניתן גם לבקר מחוץ לשעות הפעילות בתיאום מראש.</p>
-              <p className="text-lg font-semibold mb-2">לכל שאלה ותיאום ביקור, צרו איתנו קשר בטלפונים:</p>
-              <p className="text-xl mb-1 font-medium">050-5263429</p>
-              <p className="text-xl font-medium">09-7963181</p>
-              
-              <div className="mt-6">
-                <Link
-                  href="https://maps.app.goo.gl/Vf2LJzSxn4DGbsSk9"
-                  target="_blank"
-                  className="bg-green-600 hover:bg-green-700 transition-colors text-white px-6 py-2 rounded-md text-lg font-medium inline-block"
-                >
-                  הוראות הגעה
-                </Link>
+            <div className="space-y-4 order-2 md:order-1 text-right">
+              <div className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-semibold mb-4">בקרו אותנו</h3>
+                <p className="mb-2"><strong>כתובת:</strong> כפר יעבץ, מחוז המרכז, ישראל</p>
+                <p className="mb-2"><strong>טלפון:</strong> 052-347-7087</p>
+                <p className="mb-2"><strong>אימייל:</strong> contact@naftalinursery.com</p>
+                <p className="mb-4"><strong>שעות פתיחה:</strong> ראשון-שישי 8:00-17:00, שבת סגור</p>
+                
+                <p className="text-gray-600">לכיוונים או לכל שאלה, אל תהססו להתקשר אלינו!</p>
               </div>
             </div>
             
-            <div className="relative h-80 rounded-lg overflow-hidden">
-              <Image
-                src="/images/location.jpg"
-                alt="מיקום המשתלה"
-                fill
-                style={{ objectFit: "cover" }}
-              />
+            <div className="relative h-96 rounded-lg overflow-hidden order-1 md:order-2">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3378.0005908483936!2d34.92618397619365!3d32.18966587326275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d41ad6797147f%3A0x38ff7cb06b32804!2sKfar%20Yabetz!5e0!3m2!1sen!2sil!4v1702391520425!5m2!1sen!2sil" 
+                width="100%" 
+                height="100%" 
+                style={{border:0}} 
+                allowFullScreen={false} 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>

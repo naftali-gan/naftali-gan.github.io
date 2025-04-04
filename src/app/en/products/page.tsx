@@ -1,131 +1,155 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
+import ProductCard from "@/components/product/ProductCard";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Products | Naftali\'s Nursery',
-  description: 'Discover our wide range of quality plants and gardening products at Naftali\'s Nursery',
+  title: 'Our Plants | Naftali\'s Nursery',
+  description: 'Explore our selection of quality plants, trees, palms, and fruit trees.',
 };
+
+// Define product type to fix the type error
+interface Product {
+  id: number;
+  name: string;
+  image: string;
+  scientificName: string;
+  height: string;
+  diameter?: string; // Make diameter optional
+  details: string;
+}
+
+interface Category {
+  id: number;
+  name: string;
+  description: string;
+  products: Product[];
+}
 
 export default function ProductsPage() {
   // Mock product data - in a real app, this would come from a database or API
-  const categories = [
+  const categories: Category[] = [
     {
       id: 1,
-      name: 'Palms and Plants',
-      description: 'Quality palms and plants for garden and home decoration',
+      name: "Palm Trees",
+      description: "Majestic palm trees that add a tropical feel to any space.",
       products: [
         { 
           id: 1, 
-          name: 'King Palm', 
-          image: '/images/products/cunninghamiana.webp',
-          scientificName: 'Archontophoenix cunninghamiana',
-          height: '15-20 m',
-          diameter: '20-50 cm',
-          details: 'A tall and impressive palm native to Australia. It reaches a height of 12 meters or more. It has a medium to fast growth rate and requires a moderate amount of watering.'
+          name: "King Palm", 
+          image: "/images/products/cunninghamiana.webp",
+          scientificName: "Archontophoenix cunninghamiana",
+          height: "5-10m",
+          diameter: "30-40cm",
+          details: "The King Palm is an elegant, single-trunk palm with a smooth, light gray trunk. It has a graceful, feathery crown of dark green fronds."
         },
         { 
           id: 2, 
-          name: 'Foxtail Palm', 
-          image: '/images/products/bifurcate.webp',
-          scientificName: 'Wodyetia bifurcate',
-          height: '6-10 m',
-          details: 'A tall, impressive, and beautiful palm with a tropical appearance. Native to Australia. Medium to large size, reaching about 10 meters in height. Medium to fast growth rate and requires moderate watering.'
+          name: "Foxtail Palm", 
+          image: "/images/products/bifurcate.webp",
+          scientificName: "Wodyetia bifurcata",
+          height: "6-10m",
+          diameter: "25-35cm",
+          details: "The Foxtail Palm is known for its unique, fluffy fronds that resemble a fox's tail. It has a smooth, light gray trunk and is relatively fast-growing."
         },
         { 
           id: 3, 
-          name: 'Royal Palm', 
-          image: '/images/products/roystonea.webp',
-          scientificName: 'Roystonea',
-          height: '15-20 m',
-          diameter: '40-70 cm',
-          details: 'The Royal Palm, native to Central and South America, is a beautiful and commanding palm. Medium to large in size, it can reach 20 meters or more in height. It has a medium growth rate and requires moderate watering.'
+          name: "Royal Palm", 
+          image: "/images/products/roystonea.webp",
+          scientificName: "Roystonea regia",
+          height: "15-20m",
+          diameter: "40-50cm",
+          details: "The Royal Palm is a tall, majestic palm with a smooth, light gray trunk that has a distinctive bulge. It has elegant, feathery fronds and is commonly used in avenue plantings."
         },
         { 
           id: 4, 
-          name: 'Cycas Thouarsii', 
-          image: '/images/products/thouarsii.webp',
-          scientificName: 'Cycas thouarsii',
-          height: '1-2 m',
-          details: 'An evergreen cycad native to Madagascar. Small to medium size, reaches about 2 meters in height with leaves spreading 1.5-2 meters wide. Medium growth rate and requires moderate watering.'
+          name: "Robelini Palm", 
+          image: "/images/products/roebelenii.webp",
+          scientificName: "Phoenix roebelenii",
+          height: "2-3m",
+          diameter: "15-20cm",
+          details: "The Robelini Palm is a small, elegant palm with a slender trunk and delicate, arching fronds. It's perfect for smaller spaces and container planting."
         },
         { 
           id: 5, 
-          name: 'Pygmy Date Palm', 
-          image: '/images/products/roebelenii.webp',
-          scientificName: 'Phoenix roebelenii',
-          height: '2-3 m',
-          details: 'A small palm that is very easy to grow and maintain. Reaches a height of about 2-3 meters with leaves spreading about 2 meters wide. Medium growth rate and requires moderate watering.'
+          name: "Triangle Palm", 
+          image: "/images/products/decaryi.webp",
+          scientificName: "Dypsis decaryi",
+          height: "6-10m",
+          diameter: "25-35cm",
+          details: "The Triangle Palm is named for its distinctive three-sided arrangement of fronds. It has a unique, sculptural appearance that makes it a standout specimen."
         },
         { 
           id: 6, 
-          name: 'Sago Palm', 
-          image: '/images/products/revoluta.webp',
-          scientificName: 'Cycas revoluta',
-          height: '1.5-2 m',
-          details: 'An evergreen cycad native to Japan. Characterized by a fairly symmetrical appearance and shiny green leaves. Reaches a height of about 2 meters with leaves spreading about 1.5 meters wide. Slow growth rate and requires low to moderate watering.'
-        },
+          name: "Queen Palm", 
+          image: "/images/products/romanzoffiana.webp",
+          scientificName: "Syagrus romanzoffiana",
+          height: "10-15m",
+          diameter: "30-40cm",
+          details: "The Queen Palm is a popular, fast-growing palm with a smooth, gray trunk and long, feathery fronds. It's widely used in landscaping for its elegant appearance."
+        }
       ]
     },
     {
       id: 2,
-      name: 'Additional Palms',
-      description: 'Unique palms to design your garden',
+      name: "Ornamental Trees",
+      description: "Beautiful ornamental trees to enhance your garden's aesthetics.",
       products: [
         { 
           id: 7, 
-          name: 'Triangle Palm', 
-          image: '/images/products/decaryi.webp',
-          scientificName: 'Dypsis decaryi',
-          height: '5-6 m',
-          details: 'A palm native to southern Madagascar. Medium size, about 5-6 meters tall and its leaves can reach a length of about 3 meters. Medium to fast growth rate and requires moderate watering.'
+          name: "Cycas Thouarsii", 
+          image: "/images/products/thouarsii.webp",
+          scientificName: "Cycas thouarsii",
+          height: "2-5m",
+          diameter: "20-30cm",
+          details: "Cycas Thouarsii is a slow-growing cycad with a thick, scaly trunk and a crown of stiff, feathery fronds. It's an ancient plant with a prehistoric appearance."
         },
         { 
           id: 8, 
-          name: 'Queen Palm', 
-          image: '/images/products/romanzoffiana.webp',
-          scientificName: 'Syagrus romanzoffiana',
-          height: '15-20 m',
-          diameter: '20-50 cm',
-          details: 'A palm with a tropical appearance native to the forests of South America. Medium to large in size, its height typically reaches about 15 meters and the trunk width varies between 20 and 50 cm. The Queen Palm is a durable tree with a fast growth rate and requires moderate watering.'
+          name: "Cycas Revoluta", 
+          image: "/images/products/revoluta.webp",
+          scientificName: "Cycas revoluta",
+          height: "2-3m",
+          diameter: "20-30cm",
+          details: "Cycas Revoluta, commonly known as Sago Palm, is not a true palm but a cycad. It has a thick, shaggy trunk and stiff, dark green fronds."
         },
+        { 
+          id: 9, 
+          name: "European Olive", 
+          image: "/images/products/europaea.webp",
+          scientificName: "Olea europaea",
+          height: "8-15m",
+          diameter: "30-60cm",
+          details: "The European Olive is a long-lived, slow-growing tree with a gnarled, twisted trunk and silvery-green leaves. It produces edible olives and is valued for its ornamental appearance."
+        }
       ]
     },
     {
       id: 3,
-      name: 'Fruit Trees',
-      description: 'Quality fruit trees for garden and yard',
+      name: "Fruit Trees",
+      description: "Productive fruit trees that add beauty and bounty to your garden.",
       products: [
         { 
-          id: 9, 
-          name: 'European Olive', 
-          image: '/images/products/europaea.webp',
-          scientificName: 'Olea europaea',
-          height: '3-9 m',
-          details: 'An evergreen tree native to the Middle East, despite its name. The tree is amazingly beautiful and suitable for almost any garden and landscape. Its height varies between 3 and 9 meters, depending on age and variety. Slow growth rate and requires low to moderate watering.'
-        },
-        { 
           id: 10, 
-          name: 'Lemon Tree', 
-          image: '/images/products/limon.webp',
-          scientificName: 'Citrus × limon',
-          height: '1.5-2.5 m',
-          details: 'An evergreen tree native to Asia. Height of about 2 meters. Medium growth rate and requires moderate watering. The lemon tree blooms and bears fruit almost year-round.'
+          name: "Lemon Tree", 
+          image: "/images/products/limon.webp",
+          scientificName: "Citrus limon",
+          height: "3-6m",
+          details: "The Lemon Tree is a small evergreen tree that produces fragrant white flowers and yellow fruits. It's perfect for pots or gardens and provides year-round interest."
         },
         { 
           id: 11, 
-          name: 'Clementine Tree', 
-          image: '/images/products/clementina.webp',
-          scientificName: 'Citrus × clementina',
-          height: '3-4 m',
-          details: 'The Clementine is a hybrid between a mandarin variety and a bitter orange. The tree can reach 4 meters or more in height. Medium growth rate and requires moderate to high watering.'
+          name: "Clementine Tree", 
+          image: "/images/products/clementina.webp",
+          scientificName: "Citrus clementina",
+          height: "2-4m",
+          details: "The Clementine Tree is a small, thornless citrus tree that produces sweet, easy-to-peel fruits. It has glossy, dark green leaves and fragrant white flowers."
         },
         { 
           id: 12, 
-          name: 'Washington Navel Orange', 
-          image: '/images/products/sinensis.webp',
-          scientificName: 'Citrus sinensis',
-          height: '2-3 m',
-          details: 'Washington Navel Orange, also known as the navel orange, is a natural mutation of orange that developed in Brazil. The tree is about 3 meters or more in height. Medium growth rate and requires moderate to high watering.'
+          name: "Washington Orange", 
+          image: "/images/products/sinensis.webp",
+          scientificName: "Citrus sinensis",
+          height: "3-5m",
+          details: "The Washington Orange, also known as the navel orange, is a sweet, seedless orange variety. The tree has a rounded crown of glossy, dark green leaves."
         },
       ]
     },
@@ -146,23 +170,16 @@ export default function ProductsPage() {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {category.products.map((product) => (
-                <div key={product.id} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105">
-                  <div className="relative h-64">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      style={{ objectFit: "cover" }}
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-                    <p className="text-sm text-gray-500 mb-2">{product.scientificName}</p>
-                    <p className="text-sm mb-3">Height: {product.height}</p>
-                    {product.diameter && <p className="text-sm mb-3">Trunk diameter: {product.diameter}</p>}
-                    <p className="text-sm text-gray-600 mb-4">{product.details}</p>
-                  </div>
-                </div>
+                <ProductCard
+                  key={product.id}
+                  imageSrc={product.image}
+                  name={product.name}
+                  scientificName={product.scientificName}
+                  height={`Height: ${product.height}`}
+                  diameter={product.diameter ? `Trunk diameter: ${product.diameter}` : undefined}
+                  details={product.details}
+                  showDetails={true}
+                />
               ))}
             </div>
           </section>
