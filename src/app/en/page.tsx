@@ -76,7 +76,7 @@ export default function EnglishHome() {
             
             <div className="relative h-96 rounded-lg overflow-hidden">
               <Image
-                src="/images/nursery.jpg"
+                src="/images/gallery/fullsize/gallery12.webp"
                 alt="Naftali's Nursery"
                 fill
                 style={{ objectFit: "cover" }}

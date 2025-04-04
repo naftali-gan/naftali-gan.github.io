@@ -60,7 +60,7 @@ export default function HebrewHome() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative h-96 rounded-lg overflow-hidden">
               <Image
-                src="/images/nursery.jpg"
+                src="/images/gallery/fullsize/gallery12.webp"
                 alt="משתלת נפתלי"
                 fill
                 style={{ objectFit: "cover" }}

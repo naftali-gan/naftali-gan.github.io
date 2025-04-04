@@ -49,19 +49,19 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
             <h3 className="text-lg font-semibold mb-4">{t.contact}</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
-                <FaMapMarkerAlt className="mr-2" />
+                <FaMapMarkerAlt className="me-3" />
                 <span>רחוב הגן 123, תל אביב, ישראל</span>
               </li>
               <li className="flex items-center">
-                <FaPhone className="mr-2" />
+                <FaPhone className="me-3" />
                 <span>03-1234567</span>
               </li>
               <li className="flex items-center">
-                <FaEnvelope className="mr-2" />
+                <FaEnvelope className="me-3" />
                 <span>info@naftaligan.co.il</span>
               </li>
               <li className="flex items-center">
-                <FaClock className="mr-2" />
+                <FaClock className="me-3" />
                 <span>א&apos;-ה&apos;: 8:00-18:00, ו&apos;: 8:00-14:00</span>
               </li>
             </ul>
@@ -102,7 +102,7 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
           {/* Social Media and Newsletter */}
           <div>
             <h3 className="text-lg font-semibold mb-4">{locale === 'he' ? 'עקבו אחרינו' : 'Follow Us'}</h3>
-            <div className="flex space-x-4 mb-6">
+            <div className={`flex ${locale === 'he' ? 'space-x-reverse space-x-4' : 'space-x-4'} mb-6`}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
                 <FaFacebook size={24} />
               </a>
@@ -132,7 +132,7 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
 
         <div className="mt-12 pt-8 border-t border-green-800 text-center">
           <p>{t.rights} © {currentYear}</p>
-          <div className="mt-4 flex justify-center space-x-6">
+          <div className={`mt-4 flex justify-center ${locale === 'he' ? 'space-x-reverse space-x-6' : 'space-x-6'}`}>
             <Link href={getLink('/privacy')} className="hover:text-green-300 transition-colors">
               {t.privacy}
             </Link>
