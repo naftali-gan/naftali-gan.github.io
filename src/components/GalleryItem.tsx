@@ -6,9 +6,8 @@ import { useEffect, useState } from 'react';
 interface GalleryItemProps {
   item: {
     id: number;
-    title: string;
-    description: string;
     image: string;
+    thumbnail: string;
   };
 }
 
@@ -45,8 +44,8 @@ export default function GalleryItem({ item }: GalleryItemProps) {
       >
         <div className="relative h-72">
           <Image
-            src={item.image}
-            alt={item.title}
+            src={item.thumbnail}
+            alt={`Gallery image ${item.id}`}
             fill
             style={{ objectFit: "cover" }}
           />
@@ -65,7 +64,7 @@ export default function GalleryItem({ item }: GalleryItemProps) {
             <div className="relative h-[80vh]">
               <Image
                 src={item.image}
-                alt={item.title}
+                alt={`Gallery image ${item.id}`}
                 fill
                 style={{ objectFit: "contain" }}
               />

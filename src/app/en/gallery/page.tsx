@@ -1,4 +1,5 @@
 import GalleryItem from '@/components/GalleryItem';
+import galleryItems from '@/data/galleryData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,64 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function GalleryPage() {
-  // In a real app, these would come from a CMS or API
-  const galleryItems = [
-    {
-      id: 1,
-      title: 'Nursery Yard',
-      description: 'A view of our nursery yard in the morning hours',
-      image: '/images/hero-background.jpg'
-    },
-    {
-      id: 2,
-      title: 'King Palm',
-      description: 'A tall and impressive palm native to Australia',
-      image: '/images/product-1.jpg'
-    },
-    {
-      id: 3,
-      title: 'Foxtail Palm',
-      description: 'Beautiful palm with a tropical appearance',
-      image: '/images/product-2.jpg'
-    },
-    {
-      id: 4,
-      title: 'Sago Palm',
-      description: 'An evergreen cycad native to Japan',
-      image: '/images/product-3.jpg'
-    },
-    {
-      id: 5,
-      title: 'Garden Design',
-      description: 'A garden designed by our team',
-      image: '/images/hero-background.jpg'
-    },
-    {
-      id: 6,
-      title: 'Royal Palm',
-      description: 'Impressive palm native to Central and South America',
-      image: '/images/product-1.jpg'
-    },
-    {
-      id: 7,
-      title: 'Fruit Trees',
-      description: 'Various fruit trees for garden and yard',
-      image: '/images/product-2.jpg'
-    },
-    {
-      id: 8,
-      title: 'Plant Greenhouse',
-      description: 'New greenhouse recently opened',
-      image: '/images/product-3.jpg'
-    },
-    {
-      id: 9,
-      title: 'European Olive',
-      description: 'Evergreen tree suitable for almost any garden',
-      image: '/images/hero-background.jpg'
-    },
-  ];
-
   return (
     <main className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4">

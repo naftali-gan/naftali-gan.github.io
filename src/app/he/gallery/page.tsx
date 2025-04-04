@@ -1,4 +1,5 @@
 import GalleryItem from '@/components/GalleryItem';
+import galleryItems from '@/data/galleryData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -7,64 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function GalleryPage() {
-  // In a real app, these would come from a CMS or API
-  const galleryItems = [
-    {
-      id: 1,
-      title: 'חצר המשתלה',
-      description: 'מבט על חצר המשתלה שלנו בשעות הבוקר',
-      image: '/images/hero-background.jpg'
-    },
-    {
-      id: 2,
-      title: 'דקל טבעות',
-      description: 'דקל גבוה ומרשים שמקורו באוסטרליה',
-      image: '/images/product-1.jpg'
-    },
-    {
-      id: 3,
-      title: 'דקל זנב שועל',
-      description: 'דקל יפהפה בעל מראה טרופי',
-      image: '/images/product-2.jpg'
-    },
-    {
-      id: 4,
-      title: 'ציקס רבולטה',
-      description: 'ציקס ירוק עד שמקורו ביפן',
-      image: '/images/product-3.jpg'
-    },
-    {
-      id: 5,
-      title: 'עיצוב גינות',
-      description: 'דוגמה לגינה שעוצבה על ידי הצוות שלנו',
-      image: '/images/hero-background.jpg'
-    },
-    {
-      id: 6,
-      title: 'דקל המלך',
-      description: 'דקל מרשים שמקורו במרכז ודרום אמריקה',
-      image: '/images/product-1.jpg'
-    },
-    {
-      id: 7,
-      title: 'עצי פרי',
-      description: 'מגוון עצי פרי לגינה ולחצר',
-      image: '/images/product-2.jpg'
-    },
-    {
-      id: 8,
-      title: 'חממה לגידול צמחים',
-      description: 'חממה חדשה שנפתחה לאחרונה',
-      image: '/images/product-3.jpg'
-    },
-    {
-      id: 9,
-      title: 'זית אירופי',
-      description: 'עץ ירוק-עד שמתאים כמעט לכל גינה',
-      image: '/images/hero-background.jpg'
-    },
-  ];
-
   return (
     <main className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4">
