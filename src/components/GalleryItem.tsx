@@ -53,20 +53,27 @@ export default function GalleryItem({ item }: GalleryItemProps) {
       </div>
 
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4" onClick={() => setIsModalOpen(false)}>
-          <div className="relative w-full max-w-4xl max-h-[90vh] overflow-hidden rounded-lg" onClick={(e) => e.stopPropagation()}>
+        <div 
+          className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4" 
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div 
+            className="relative w-full max-w-5xl max-h-[95vh] overflow-hidden rounded-xl shadow-2xl animate-modal-fade" 
+            onClick={(e) => e.stopPropagation()}
+          >
             <button 
-              className="absolute top-2 right-2 z-10 bg-white rounded-full w-8 h-8 flex items-center justify-center text-black hover:bg-gray-200"
+              className="absolute top-3 right-3 z-10 bg-white rounded-full w-9 h-9 flex items-center justify-center text-black hover:bg-gray-200 transition-colors"
               onClick={() => setIsModalOpen(false)}
             >
               ✕
             </button>
-            <div className="relative h-[80vh]">
+            <div className="relative h-[85vh]">
               <Image
                 src={item.image}
                 alt={`Gallery image ${item.id}`}
                 fill
                 style={{ objectFit: "contain" }}
+                className="rounded-xl"
               />
             </div>
           </div>
