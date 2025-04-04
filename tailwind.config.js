@@ -31,9 +31,24 @@ module.exports = {
           '0%': { opacity: '0', transform: 'scale(0.95)' },
           '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        'modal-fade-out': {
+          '0%': { opacity: '1', transform: 'scale(1)' },
+          '100%': { opacity: '0', transform: 'scale(0.95)' },
+        },
+        'backdrop-fade': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        'backdrop-fade-out': {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        },
       },
       animation: {
         'modal-fade': 'modal-fade 0.3s ease-out',
+        'modal-fade-out': 'modal-fade-out 0.3s ease-in',
+        'backdrop-fade': 'backdrop-fade 0.2s ease-out',
+        'backdrop-fade-out': 'backdrop-fade-out 0.3s ease-in',
       },
     },
   },
