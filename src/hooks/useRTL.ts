@@ -6,9 +6,9 @@ import { useMemo } from 'react';
  * @returns Object with isRTL boolean and direction string
  */
 export function useRTL(locale: string) {
-  const rtlLocales = ['he', 'ar'];
   
   const isRTL = useMemo(() => {
+    const rtlLocales = ['he', 'ar'];
     return rtlLocales.includes(locale);
   }, [locale]);
   

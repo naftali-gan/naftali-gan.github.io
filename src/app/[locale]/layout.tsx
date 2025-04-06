@@ -19,7 +19,7 @@ export default function LocaleLayout({
   const params = useParams();
   const locale = params.locale as string;
   const { direction } = useRTL(locale);
-  const [messages, setMessages] = useState<any>(null);
+  const [messages, setMessages] = useState<Record<string, unknown> | null>(null);
   
   useEffect(() => {
     // Dynamically load the messages

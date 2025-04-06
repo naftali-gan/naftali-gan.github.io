@@ -6,7 +6,8 @@ export const dynamic = 'force-static';
 export function generateStaticParams() {
   return [
     { locale: 'en' },
-    { locale: 'he' }
+    { locale: 'he' },
+    { locale: 'favicon.ico' }
   ];
 }
 
@@ -15,8 +16,20 @@ export async function GET(
   { params }: { params: Promise<{ locale: string }> }
 ) {
   // This file is needed to make the dynamic segment [locale] work
-  // The actual routing logic is handled by Next.js
   const { locale } = await params;
+  
+  // Special handling for favicon.ico
+  if (locale === 'favicon.ico') {
+    // Redirect to the actual favicon in the public directory
+    return new Response(null, {
+      status: 307, // Temporary redirect
+      headers: {
+        'Location': '/favicon.ico'
+      }
+    });
+  }
+  
+  // Regular locale handling
   return new Response(null, {
     status: 200,
   });
