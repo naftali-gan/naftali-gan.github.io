@@ -6,8 +6,7 @@ export const dynamic = 'force-static';
 export function generateStaticParams() {
   return [
     { locale: 'en' },
-    { locale: 'he' },
-    { locale: 'favicon.ico' }
+    { locale: 'he' }
   ];
 }
 

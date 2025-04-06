@@ -18,7 +18,7 @@ export default function About({ locale, translations }: AboutProps) {
         <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 mb-16`}>
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/images/hero-background.jpg"
+              src="/images/gallery/fullsize/gallery24.webp"
               alt={translations.title}
               fill
               style={{ objectFit: "cover" }}
