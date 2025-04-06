@@ -1,0 +1,1 @@
+Continuously run 'yarn {{command_name}}' and automatically fix any errors that appear in the output. Keep iterating until you get no errors
