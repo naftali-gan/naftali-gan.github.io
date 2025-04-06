@@ -61,27 +61,6 @@ export default function ClientAboutPage({ locale }: { locale: string }) {
               </div>
             </div>
           </div>
-          
-          <div className="text-center mb-16">
-            <h2 className="text-2xl font-semibold mb-6">{t('team')}</h2>
-            <p className="max-w-3xl mx-auto mb-8">
-              {t('teamContent')}
-            </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {t.raw('teamMembers').map((member: { name: string; position: string }, index: number) => (
-                <div key={index} className="bg-white p-6 rounded-lg shadow">
-                  <div className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-4">
-                    <div className="w-full h-full bg-gray-200 flex items-center justify-center">
-                      <span className="text-gray-500">{t('photoPlaceholder')}</span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
-                  <p className="text-gray-600">{member.position}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </main>
     </>

@@ -34,15 +34,7 @@
     "sustainability": "Sustainability",
     "sustainabilityContent": "We are committed to environmentally friendly gardening methods and promoting sustainable gardening practices.",
     "service": "Service",
-    "serviceContent": "We believe in excellent customer service and providing professional and friendly advice to every customer.",
-    "team": "Our Team",
-    "teamContent": "Our team consists of experienced gardening experts with a genuine passion for plants and gardening. We are here to help you create the perfect garden for you.",
-    "teamMembers": [
-      { "name": "Israel Israeli", "position": "Owner & Manager" },
-      { "name": "Sarah Cohen", "position": "Plant Expert" },
-      { "name": "Yossi Levi", "position": "Gardening Consultant" }
-    ],
-    "photoPlaceholder": "Photo"
+    "serviceContent": "We believe in excellent customer service and providing professional and friendly advice to every customer."
   },
   "products": {
     "title": "Our Products",
