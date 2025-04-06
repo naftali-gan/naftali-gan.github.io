@@ -36,7 +36,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
   };
 
   const navItems = [
-    { key: 'home', href: locale === 'he' ? '/he' : '/en' },
+    { key: 'home', href: `/${locale}` },
     { key: 'about', href: `/${locale}/about` },
     { key: 'products', href: `/${locale}/products` },
     { key: 'gallery', href: `/${locale}/gallery` },
@@ -48,7 +48,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex items-center">
-            <Link href={locale === 'he' ? '/he' : '/en'} className="flex items-center">
+            <Link href={`/${locale}`} className="flex items-center">
               <Image 
                 src="/images/logo.png" 
                 alt="Naftali's Nursery Logo" 
