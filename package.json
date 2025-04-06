@@ -10,7 +10,8 @@
     "test": "jest",
     "test:ci": "jest --ci",
     "test:e2e": "playwright test",
-    "test:e2e:ci": "playwright test --reporter=github"
+    "test:e2e:ci": "playwright test --reporter=github",
+    "pre-deploy": "yarn lint && yarn build && yarn test"
   },
   "dependencies": {
     "next": "15.2.4",
