@@ -116,7 +116,7 @@ export default function EnglishHome() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
                 <p className="mb-2"><strong>Address:</strong> Kfar Yabetz, Central District, Israel</p>
-                <p className="mb-2"><strong>Phone:</strong> +972 52-347-7087</p>
+                <p className="mb-2"><strong>Phone:</strong> 050-5263429</p>
                 <p className="mb-2"><strong>Email:</strong> contact@naftalinursery.com</p>
                 <p className="mb-4"><strong>Hours:</strong> Sunday-Friday 8:00 AM - 5:00 PM, Saturday Closed</p>
                 

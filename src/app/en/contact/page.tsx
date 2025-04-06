@@ -150,7 +150,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-gray-600">03-1234567</p>
+                  <p className="text-gray-600">09-7973181</p>
                 </div>
               </div>
               

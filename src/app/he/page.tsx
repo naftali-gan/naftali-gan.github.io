@@ -105,7 +105,7 @@ export default function HebrewHome() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-4">בקרו אותנו</h3>
                 <p className="mb-2"><strong>כתובת:</strong> כפר יעבץ, מחוז המרכז, ישראל</p>
-                <p className="mb-2"><strong>טלפון:</strong> 052-347-7087</p>
+                <p className="mb-2"><strong>טלפון:</strong> 050-5263429</p>
                 <p className="mb-2"><strong>אימייל:</strong> contact@naftalinursery.com</p>
                 <p className="mb-4"><strong>שעות פתיחה:</strong> ראשון-שישי 8:00-17:00, שבת סגור</p>
                 
