@@ -31,8 +31,6 @@ export default async function AboutPage({
   params: Promise<{ locale: string }>
 }) {
   const { locale } = await params;
-  // Get translations for this page
-  const translations = getTranslations(locale);
   
-  return <About locale={locale} translations={translations.about} />;
+  return <About locale={locale} />;
 } 

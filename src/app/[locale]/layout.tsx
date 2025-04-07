@@ -14,9 +14,9 @@ const translationsMap = {
 export async function generateMetadata({
   params
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>
 }): Promise<Metadata> {
-  const locale = params.locale;
+  const { locale } = await params;
   const validLocales = ['en', 'he'];
   
   if (!validLocales.includes(locale)) {
@@ -35,15 +35,15 @@ export async function generateMetadata({
   };
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
   const validLocales = ['en', 'he'];
-  const locale = params.locale;
   
   // Handle cases where the locale isn't valid
   if (!validLocales.includes(locale)) {
