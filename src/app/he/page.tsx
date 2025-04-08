@@ -41,8 +41,8 @@ export default function HebrewHome() {
         </div>
         
         <div className="max-w-4xl z-10 text-white">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">ברוכים הבאים למשתלת נפתלי</h1>
-          <p className="text-xl md:text-2xl mb-8">משתלה המספקת דקלים ועצי נוי מאז שנת 2000</p>
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">ברוכים הבאים <span className="md:hidden"><br /></span>למשתלת נפתלי</h1>
+          <p className="text-xl md:text-2xl mb-8">משתלה המספקת דקלים ועצי נוי <span className="md:hidden"><br /></span>מאז שנת 2000</p>
           <Link 
             href="#contact" 
             className="bg-green-600 hover:bg-green-700 transition-colors text-white px-8 py-3 rounded-md text-lg font-medium"
@@ -104,8 +104,8 @@ export default function HebrewHome() {
             <div className="space-y-4 order-2 md:order-1 text-right">
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-4">בקרו אותנו</h3>
-                <p className="mb-2"><strong>כתובת:</strong> כפר יעבץ, מחוז המרכז, ישראל</p>
-                <p className="mb-2"><strong>טלפון:</strong> 050-5263429</p>
+                <p className="mb-2"><strong>כתובת:</strong> הראשונים 26, כפר יעבץ</p>
+                <p className="mb-2"><strong>טלפון:</strong> 09-7963181</p>
                 <p className="mb-2"><strong>אימייל:</strong> contact@naftalinursery.com</p>
                 <p className="mb-4"><strong>שעות פתיחה:</strong> ראשון-שישי 8:00-17:00, שבת סגור</p>
                 
