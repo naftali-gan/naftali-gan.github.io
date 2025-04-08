@@ -107,7 +107,7 @@ export default function HebrewHome() {
                 <p className="mb-2"><strong>כתובת:</strong> הראשונים 26, כפר יעבץ</p>
                 <p className="mb-2"><strong>טלפון:</strong> 09-7963181</p>
                 <p className="mb-2"><strong>אימייל:</strong> naftali.garden@gmail.com</p>
-                <p className="mb-4"><strong>שעות פתיחה:</strong> ראשון-שישי 8:00-17:00, שבת סגור</p>
+                <p className="mb-4"><strong>שעות פתיחה:</strong><br/> ראשון-חמישי: 7:30-16:00<br/> שישי: 7:00-13:00</p>
                 
                 <p className="text-gray-600">לכיוונים או לכל שאלה, אל תהססו להתקשר אלינו!</p>
               </div>
