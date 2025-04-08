@@ -60,14 +60,14 @@ export const translations = {
     receivedMessage: "קיבלנו את ההודעה שלכם ונחזור אליכם בהקדם.",
     contactDetails: "פרטי קשר",
     address: "כתובת",
-    addressValue: "רחוב הפרחים 123, תל אביב",
+    addressValue: "הראשונים 26, כפר יעבץ",
     phone: "טלפון",
     phoneValue: "09-7963181",
     email: "אימייל",
-    emailValue: "info@naftaligan.co.il",
+    emailValue: "naftali.garden@gmail.com",
     openingHours: "שעות פעילות",
-    openingHoursWeekdays: "ראשון-חמישי: 8:00-19:00",
-    openingHoursFriday: "שישי: 8:00-14:00",
+    openingHoursWeekdays: "ראשון-חמישי: 7:30-16:00",
+    openingHoursFriday: "שישי: 7:00-13:00",
     openingHoursSaturday: "שבת: סגור"
   },
   accessibility: {

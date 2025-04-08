@@ -50,19 +50,19 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <FaMapMarkerAlt className="me-3" />
-                <span>רחוב הגן 123, תל אביב, ישראל</span>
+                <span>הראשונים 26, כפר יעבץ</span>
               </li>
               <li className="flex items-center">
                 <FaPhone className="me-3" />
-                <span>03-1234567</span>
+                <span>09-7963181</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="me-3" />
-                <span>info@naftaligan.co.il</span>
+                <span>naftali.garden@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <FaClock className="me-3" />
-                <span>א&apos;-ה&apos;: 8:00-18:00, ו&apos;: 8:00-14:00</span>
+                <span>א&apos;-ה&apos;: 7:30-16:00, ו&apos;: 7:00-13:00</span>
               </li>
             </ul>
           </div>

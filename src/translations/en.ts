@@ -60,14 +60,14 @@ export const translations = {
     receivedMessage: "We have received your message and will get back to you soon.",
     contactDetails: "Contact Details",
     address: "Address",
-    addressValue: "123 Flower Street, Tel Aviv, Israel",
+    addressValue: "26 HaRishonim St, Kfar Yavetz, Israel",
     phone: "Phone",
     phoneValue: "09-7963181",
     email: "Email",
-    emailValue: "info@naftaligan.co.il",
+    emailValue: "naftali.garden@gmail.com",
     openingHours: "Hours of Operation",
-    openingHoursWeekdays: "Sunday-Thursday: 8:00AM-7:00PM",
-    openingHoursFriday: "Friday: 8:00AM-2:00PM",
+    openingHoursWeekdays: "Sunday-Thursday: 7:30AM-4:00PM",
+    openingHoursFriday: "Friday: 7:00AM-1:00PM",
     openingHoursSaturday: "Saturday: Closed"
   },
   accessibility: {
