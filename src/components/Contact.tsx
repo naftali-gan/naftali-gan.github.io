@@ -45,8 +45,6 @@ export default function Contact({ locale }: ContactProps) {
       });
     }, 1500);
   };
-
-  return <></>
   
   return (
     <main className="min-h-screen py-16" dir={direction} lang={locale}>
