@@ -44,9 +44,9 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
   ];
 
   return (
-    <nav className="bg-white shadow-md w-full py-2">
+    <nav className="bg-white shadow-md w-full py-2 fixed top-0 z-40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-20">
+        <div className="flex justify-between h-16 md:h-20">
           <div className="flex items-center">
             <Link href={`/${locale}`} className="flex items-center">
               <Image 
@@ -94,7 +94,7 @@ const Navigation = ({ locale = 'he' }: NavigationProps) => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-white shadow-md">
+        <div className="md:hidden bg-white shadow-md fixed top-20 left-0 right-0 z-30">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               <Link

@@ -100,7 +100,7 @@ const AccessibilityToolbar = ({ locale = 'he' }: AccessibilityToolbarProps) => {
   }
 
   return (
-    <div className="fixed top-20 left-4 z-50">
+    <div className="fixed top-24 md:top-28 left-4 z-50">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="bg-blue-600 text-white p-2 rounded-full shadow-lg flex items-center justify-center hover:bg-blue-700 transition-colors"

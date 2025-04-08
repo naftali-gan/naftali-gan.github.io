@@ -58,7 +58,7 @@ export default async function LocaleLayout({
       <DocumentSetup />
       <ClientAccessibilityToolbar locale={locale} />
       <ClientNavigation locale={locale} />
-      <div className="flex-grow">
+      <div className="flex-grow pt-20">
         {children}
       </div>
       <ClientFooter locale={locale} />
