@@ -3,6 +3,7 @@
 import { useRTL } from '@/hooks/useRTL';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useState } from 'react';
+import { FaGoogle } from 'react-icons/fa';
 
 type ContactProps = {
   locale: string;
@@ -179,6 +180,23 @@ export default function Contact({ locale }: ContactProps) {
                   <p className="text-gray-600">{t('openingHoursWeekdays')}</p>
                   <p className="text-gray-600">{t('openingHoursFriday')}</p>
                   <p className="text-gray-600">{t('openingHoursSaturday')}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start mt-4">
+                <div className={`bg-green-100 p-2 rounded-full ${direction === 'rtl' ? 'ml-3' : 'mr-3'}`}>
+                  <FaGoogle className="h-6 w-6 text-green-600" />
+                </div>
+                <div>
+                  <h3 className="font-medium">{t('googleBusiness')}</h3>
+                  <a 
+                    href="https://g.co/kgs/96cy73e" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-green-600 hover:text-green-800 transition-colors"
+                  >
+                    {t('visitOurPage')}
+                  </a>
                 </div>
               </div>
             </div>

@@ -68,7 +68,9 @@ export const translations = {
     openingHours: "Hours of Operation",
     openingHoursWeekdays: "Sunday-Thursday: 7:30AM-4:00PM",
     openingHoursFriday: "Friday: 7:00AM-1:00PM",
-    openingHoursSaturday: "Saturday: Closed"
+    openingHoursSaturday: "Saturday: Closed",
+    googleBusiness: "Google Business",
+    visitOurPage: "Visit our page"
   },
   accessibility: {
     title: "Accessibility",

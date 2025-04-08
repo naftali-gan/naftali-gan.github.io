@@ -3,8 +3,8 @@ import { Metadata } from 'next';
 import '../globals.css';
 
 export const metadata: Metadata = {
-  title: 'משתלת נפתלי | משתלה לצמחים ואביזרי גינון',
-  description: 'משתלת נפתלי - משתלה המספקת צמחים איכותיים ומוצרי גינון מאז שנת 2000',
+  title: 'משתלת נפתלי | משתלת דקלים ועצי נוי | כפר יעבץ',
+  description: 'משתלת נפתלי - משתלה המספקת דקלים ועצי נוי מאז שנת 2000',
 };
 
 export default function HebrewLayout({

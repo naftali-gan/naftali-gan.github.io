@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { FaClock, FaEnvelope, FaFacebook, FaInstagram, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import { FaClock, FaEnvelope, FaFacebook, FaGoogle, FaInstagram, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
 
 type FooterProps = {
   locale?: string;
@@ -108,6 +108,9 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
                 <FaInstagram size={24} />
+              </a>
+              <a href="https://g.co/kgs/96cy73e" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
+                <FaGoogle size={24} />
               </a>
             </div>
 

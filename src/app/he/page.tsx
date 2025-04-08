@@ -5,8 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'משתלת נפתלי | משתלה לצמחים ואביזרי גינון',
-  description: 'משתלת נפתלי - משתלה המספקת צמחים איכותיים ומוצרי גינון מאז שנת 2000',
+  title: 'משתלת נפתלי | משתלת דקלים ועצי נוי | כפר יעבץ',
+  description: 'משתלת נפתלי - משתלה המספקת דקלים ועצי נוי מאז שנת 2000',
 };
 
 export default function HebrewHome() {
@@ -42,7 +42,7 @@ export default function HebrewHome() {
         
         <div className="max-w-4xl z-10 text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">ברוכים הבאים למשתלת נפתלי</h1>
-          <p className="text-xl md:text-2xl mb-8">משתלה המספקת צמחים איכותיים ומוצרי גינון מאז שנת 2000</p>
+          <p className="text-xl md:text-2xl mb-8">משתלה המספקת דקלים ועצי נוי מאז שנת 2000</p>
           <Link 
             href="#contact" 
             className="bg-green-600 hover:bg-green-700 transition-colors text-white px-8 py-3 rounded-md text-lg font-medium"
