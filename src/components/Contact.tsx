@@ -190,7 +190,7 @@ export default function Contact({ locale }: ContactProps) {
                 <div>
                   <h3 className="font-medium">{t('googleBusiness')}</h3>
                   <a 
-                    href="https://g.co/kgs/96cy73e" 
+                    href="https://g.co/kgs/vgbLYR3" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-green-600 hover:text-green-800 transition-colors"

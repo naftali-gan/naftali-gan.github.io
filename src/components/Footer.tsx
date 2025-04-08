@@ -109,7 +109,7 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://g.co/kgs/96cy73e" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
+              <a href="https://g.co/kgs/vgbLYR3" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
                 <FaGoogle size={24} />
               </a>
             </div>
