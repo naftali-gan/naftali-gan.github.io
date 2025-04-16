@@ -149,5 +149,62 @@ export const translations = {
       content: "If you have any questions about our privacy policy, please contact us using the information provided on our contact page."
     },
     lastUpdated: "Last updated: May 2024"
+  },
+  terms: {
+    title: "Terms of Service",
+    metadata: {
+      title: "Terms of Service | Naftali's Nursery",
+      description: "Learn about our terms of service and conditions for using services at Naftali's Nursery"
+    },
+    intro: "Welcome to Naftali's Nursery. These Terms of Service govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms.",
+    acceptance: {
+      title: "Acceptance of Terms",
+      content: "By accessing our website or using our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service."
+    },
+    changes: {
+      title: "Changes to Terms",
+      content: "We reserve the right to modify these terms at any time. Any changes will be effective immediately upon posting to the website. Your continued use of the website after any changes indicates your acceptance of the modified terms."
+    },
+    account: {
+      title: "User Accounts",
+      content: "When you create an account with us, you must provide accurate and complete information. You are responsible for maintaining the confidentiality of your account and password and for restricting access to your computer."
+    },
+    conduct: {
+      title: "User Conduct",
+      content: "You agree not to use our website for any purpose that is unlawful or prohibited by these terms. You may not use the website in any manner that could damage, disable, overburden, or impair our servers or networks."
+    },
+    intellectual: {
+      title: "Intellectual Property",
+      content: "All content included on this website, such as text, graphics, logos, images, as well as the compilation thereof, is the property of Naftali's Nursery and protected by Israeli and international copyright laws."
+    },
+    products: {
+      title: "Products and Services",
+      content: "All products and services are subject to availability. We reserve the right to discontinue any product or service at any time."
+    },
+    pricing: {
+      title: "Pricing and Payment",
+      content: "Prices for our products are subject to change without notice. We reserve the right to refuse any order placed with us. Payment must be received prior to the acceptance of an order."
+    },
+    disclaimer: {
+      title: "Disclaimer of Warranties",
+      content: "The website and all information, content, materials, products, and services are provided on an 'as is' and 'as available' basis, unless otherwise specified in writing."
+    },
+    limitation: {
+      title: "Limitation of Liability",
+      content: "Naftali's Nursery shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the website or services."
+    },
+    governing: {
+      title: "Governing Law",
+      content: "These Terms of Service shall be governed by and construed in accordance with the laws of the State of Israel, without regard to its conflict of law provisions."
+    },
+    dispute: {
+      title: "Dispute Resolution",
+      content: "Any dispute arising from or relating to these terms shall be resolved exclusively through the appropriate courts in Israel."
+    },
+    contact: {
+      title: "Contact Us",
+      content: "If you have any questions about these Terms of Service, please contact us using the information provided on our contact page."
+    },
+    lastUpdated: "Last updated: May 2024"
   }
 }; 
