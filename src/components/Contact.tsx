@@ -58,7 +58,7 @@ export default function Contact({ locale }: ContactProps) {
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          <div className="bg-white rounded-lg shadow-md p-6">
+          <div className="bg-white rounded-lg shadow-md p-6 hidden">
             <h2 className="text-2xl font-semibold mb-6">{t('leaveMessage')}</h2>
             
             {isSubmitted ? (
@@ -211,9 +211,12 @@ export default function Contact({ locale }: ContactProps) {
                 </div>
               </div>
             </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <div className="relative h-[300px]">
+          </div>
+          
+          <div>
+            <h2 className="text-2xl font-semibold mb-6">{t('address')}</h2>
+            <div className="bg-white rounded-lg shadow-md overflow-hidden h-full">
+              <div className="relative h-full min-h-[400px]">
                 {/* Google Map integration */}
                 <iframe 
                   src={globalData.googleMapsIframeUrl}

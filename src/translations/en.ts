@@ -50,7 +50,7 @@ export const translations = {
   },
   contact: {
     title: "Contact Us",
-    intro: "The Naftali's Nursery team will be happy to answer any questions. Fill out the form or use the contact details below.",
+    intro: "The Naftali's Nursery team will be happy to answer any questions. Find our contact details and location below.",
     leaveMessage: "Leave a Message",
     fullName: "Full Name",
     emailLabel: "Email",
