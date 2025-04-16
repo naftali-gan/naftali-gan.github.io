@@ -1,5 +1,6 @@
 import Carousel from '@/components/Carousel';
 import FeaturedProducts from '@/components/product/FeaturedProducts';
+import { globalData } from '@/data/globalData';
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -105,8 +106,9 @@ export default function HebrewHome() {
               <div className="bg-white p-6 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-4">בקרו אותנו</h3>
                 <p className="mb-2"><strong>כתובת:</strong> הראשונים 26, כפר יעבץ</p>
-                <p className="mb-2"><strong>טלפון:</strong> 09-7963181</p>
-                <p className="mb-2"><strong>אימייל:</strong> naftali.garden@gmail.com</p>
+                <p className="mb-2"><strong>טלפון:</strong> {globalData.mainPhone}</p>
+                <p className="mb-2"><strong>נייד:</strong> {globalData.mobilePhone}</p>
+                <p className="mb-2"><strong>אימייל:</strong> {globalData.email}</p>
                 <p className="mb-4"><strong>שעות פתיחה:</strong><br/> ראשון-חמישי: 7:30-16:00<br/> שישי: 7:00-13:00</p>
                 
                 <p className="text-gray-600">לכיוונים או לכל שאלה, אל תהססו להתקשר אלינו!</p>
@@ -115,7 +117,7 @@ export default function HebrewHome() {
             
             <div className="relative h-96 rounded-lg overflow-hidden order-1 md:order-2">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3378.0005908483936!2d34.92618397619365!3d32.18966587326275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d41ad6797147f%3A0x38ff7cb06b32804!2sKfar%20Yabetz!5e0!3m2!1sen!2sil!4v1702391520425!5m2!1sen!2sil" 
+                src={globalData.googleMapsIframeUrl} 
                 width="100%" 
                 height="100%" 
                 style={{border:0}} 

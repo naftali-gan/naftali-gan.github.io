@@ -16,7 +16,7 @@ export default function GalleryPage() {
           View a collection of photos from our nursery, our plants, and various projects we&apos;ve been involved in over the years.
         </p>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6">
           {galleryItems.map((item, index) => (
             <GalleryItem key={index} item={item} />
           ))}
@@ -26,8 +26,6 @@ export default function GalleryPage() {
           <p className="mb-4">Want to see more? Follow us on social media!</p>
           <div className="flex justify-center gap-4">
             <a href="#" className="text-blue-700 hover:text-blue-900">Facebook</a>
-            <a href="#" className="text-pink-600 hover:text-pink-800">Instagram</a>
-            <a href="#" className="text-red-600 hover:text-red-800">YouTube</a>
           </div>
         </div>
       </div>

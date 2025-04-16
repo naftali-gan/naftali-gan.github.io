@@ -17,7 +17,7 @@ export default function HebrewLayout({
       <DocumentSetup />
       <ClientAccessibilityToolbar locale="he" />
       <ClientNavigation locale="he" />
-      <div className="flex-grow">
+      <div className="flex-grow pt-20">
         {children}
       </div>
       <ClientFooter locale="he" />

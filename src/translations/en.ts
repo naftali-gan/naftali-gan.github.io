@@ -1,3 +1,5 @@
+import { globalData } from "@/data/globalData";
+
 export const translations = {
   metadata: {
     title: "Naftali's Nursery | Plants and Gardening Supplies",
@@ -62,9 +64,9 @@ export const translations = {
     address: "Address",
     addressValue: "26 HaRishonim St, Kfar Yavetz, Israel",
     phone: "Phone",
-    phoneValue: "09-7963181",
+    phoneValue: globalData.mainPhone,
     email: "Email",
-    emailValue: "naftali.garden@gmail.com",
+    emailValue: globalData.email,
     openingHours: "Hours of Operation",
     openingHoursWeekdays: "Sunday-Thursday: 7:30AM-4:00PM",
     openingHoursFriday: "Friday: 7:00AM-1:00PM",

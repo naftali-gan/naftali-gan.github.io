@@ -50,7 +50,7 @@ export default function GalleryItem({ item }: GalleryItemProps) {
         className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transition-transform hover:scale-105"
         onClick={() => setIsModalOpen(true)}
       >
-        <div className="relative h-72">
+        <div className="relative w-full h-[160px] md:h-[300px]">
           <Image
             src={item.thumbnail}
             alt="Gallery image"

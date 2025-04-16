@@ -1,3 +1,5 @@
+import { globalData } from "@/data/globalData";
+
 export const translations = {
   metadata: {
     title: "משתלת נפתלי | משתלת דקלים ועצי נוי | כפר יעבץ",
@@ -62,9 +64,9 @@ export const translations = {
     address: "כתובת",
     addressValue: "הראשונים 26, כפר יעבץ",
     phone: "טלפון",
-    phoneValue: "09-7963181",
+    phoneValue: globalData.mainPhone,
     email: "אימייל",
-    emailValue: "naftali.garden@gmail.com",
+    emailValue: globalData.email,
     openingHours: "שעות פעילות",
     openingHoursWeekdays: "ראשון-חמישי: 7:30-16:00",
     openingHoursFriday: "שישי: 7:00-13:00",

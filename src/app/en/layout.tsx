@@ -17,7 +17,7 @@ export default function EnglishLayout({
       <DocumentSetup />
       <ClientAccessibilityToolbar locale="en" />
       <ClientNavigation locale="en" />
-      <div className="flex-grow">
+      <div className="flex-grow pt-20">
         {children}
       </div>
       <ClientFooter locale="en" />

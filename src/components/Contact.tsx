@@ -1,5 +1,6 @@
 'use client';
 
+import { globalData } from '@/data/globalData';
 import { useRTL } from '@/hooks/useRTL';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useState } from 'react';
@@ -144,7 +145,7 @@ export default function Contact({ locale }: ContactProps) {
                   <h3 className="font-medium">{t('address')}</h3>
                   <p className="text-gray-600">{t('addressValue')}</p>
                   <a 
-                    href="https://www.waze.com/ul?ll=32.25654%2C34.92204&navigate=yes&zoom=17" 
+                    href={globalData.wazeUrl}
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="flex items-center text-green-600 hover:text-green-800 transition-colors mt-1"
@@ -215,7 +216,7 @@ export default function Contact({ locale }: ContactProps) {
               <div className="relative h-[300px]">
                 {/* Google Map integration */}
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.3963691269827!2d34.8!3d32.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDAyJzI0LjAiTiAzNMKwNDgnMDAuMCJF!5e0!3m2!1sen!2sil!4v1616601234567!5m2!1sen!2sil" 
+                  src={globalData.googleMapsIframeUrl}
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

@@ -1,8 +1,9 @@
 'use client';
 
+import { globalData } from '@/data/globalData';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { FaClock, FaEnvelope, FaFacebook, FaGoogle, FaInstagram, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import { FaClock, FaEnvelope, FaFacebook, FaGoogle, FaMapMarkerAlt, FaMobileAlt, FaPhone } from 'react-icons/fa';
 import { SiWaze } from 'react-icons/si';
 
 type FooterProps = {
@@ -55,7 +56,7 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
               </li>
               <li className="flex items-center">
                 <a 
-                  href="https://www.waze.com/ul?ll=32.25654%2C34.92204&navigate=yes&zoom=17" 
+                  href={globalData.wazeUrl}
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center hover:text-green-300 transition-colors"
@@ -66,11 +67,15 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
               </li>
               <li className="flex items-center">
                 <FaPhone className="me-3" />
-                <span>09-7963181</span>
+                <span>{globalData.mainPhone}</span>
+              </li>
+              <li className="flex items-center">
+                <FaMobileAlt className="me-3" />
+                <span>{globalData.mobilePhone}</span>
               </li>
               <li className="flex items-center">
                 <FaEnvelope className="me-3" />
-                <span>naftali.garden@gmail.com</span>
+                <span>{globalData.email}</span>
               </li>
               <li className="flex items-center">
                 <FaClock className="me-3" />
@@ -117,9 +122,6 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
             <div className={`flex ${locale === 'he' ? 'space-x-reverse space-x-4' : 'space-x-4'} mb-6`}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
                 <FaFacebook size={24} />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
-                <FaInstagram size={24} />
               </a>
               <a href="https://g.co/kgs/vgbLYR3" target="_blank" rel="noopener noreferrer" className="hover:text-green-300 transition-colors">
                 <FaGoogle size={24} />
