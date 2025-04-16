@@ -1,11 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations } from '@/hooks/useTranslations';
+import { Translations } from '@/utils/translations';
 import Head from 'next/head';
 
 type MetadataHeadProps = {
-  section: string;
-  metadataKey?: string;
+  section: keyof Translations;
+  metadataKey?: 'metadata';
 };
 
 export default function MetadataHead({ section, metadataKey = 'metadata' }: MetadataHeadProps) {
@@ -13,8 +14,8 @@ export default function MetadataHead({ section, metadataKey = 'metadata' }: Meta
   
   return (
     <Head>
-      <title>{t(`${metadataKey}.title`)}</title>
-      <meta name="description" content={t(`${metadataKey}.description`)} />
+      <title>{(t as any)(metadataKey)?.title}</title>
+      <meta name="description" content={(t as any)(metadataKey)?.description} />
     </Head>
   );
 } 
