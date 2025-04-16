@@ -22,6 +22,8 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
   const [currentIndex, setCurrentIndex] = useState(index);
   const [currentImage, setCurrentImage] = useState(item.image);
 
+  const buttonClasses = "bg-white/50 backdrop-blur-sm rounded-full flex items-center justify-center text-black hover:bg-white/70 transition-colors z-10 absolute";
+
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
@@ -100,7 +102,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
             onClick={(e) => e.stopPropagation()}
           >
             <button 
-              className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full w-10 h-10 flex items-center justify-center text-black hover:bg-white transition-colors"
+              className={`${buttonClasses} top-4 right-4 w-10 h-10`}
               onClick={!isClosing ? handleClose : undefined}
             >
               <FaTimes size={18} />
@@ -109,7 +111,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
             {allItems.length > 1 && (
               <>
                 <button 
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center text-black hover:bg-white transition-colors"
+                  className={`${buttonClasses} left-4 top-1/2 transform -translate-y-1/2 w-12 h-12`}
                   onClick={(e) => {
                     e.stopPropagation();
                     !isClosing && handlePrevImage();
@@ -119,7 +121,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
                 </button>
                 
                 <button 
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center text-black hover:bg-white transition-colors"
+                  className={`${buttonClasses} right-4 top-1/2 transform -translate-y-1/2 w-12 h-12`}
                   onClick={(e) => {
                     e.stopPropagation();
                     !isClosing && handleNextImage();
