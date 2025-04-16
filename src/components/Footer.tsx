@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { FaClock, FaEnvelope, FaFacebook, FaGoogle, FaInstagram, FaMapMarkerAlt, FaPhone } from 'react-icons/fa';
+import { SiWaze } from 'react-icons/si';
 
 type FooterProps = {
   locale?: string;
@@ -51,6 +52,17 @@ const Footer = ({ locale = 'he' }: FooterProps) => {
               <li className="flex items-center">
                 <FaMapMarkerAlt className="me-3" />
                 <span>הראשונים 26, כפר יעבץ</span>
+              </li>
+              <li className="flex items-center">
+                <a 
+                  href="https://www.waze.com/ul?ll=32.25654%2C34.92204&navigate=yes&zoom=17" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex items-center hover:text-green-300 transition-colors"
+                >
+                  <SiWaze className="me-3" />
+                  <span>{locale === 'he' ? 'נווט אלינו ב-Waze' : 'Navigate with Waze'}</span>
+                </a>
               </li>
               <li className="flex items-center">
                 <FaPhone className="me-3" />

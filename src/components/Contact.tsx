@@ -4,6 +4,7 @@ import { useRTL } from '@/hooks/useRTL';
 import { useTranslations } from '@/hooks/useTranslations';
 import { useState } from 'react';
 import { FaGoogle } from 'react-icons/fa';
+import { SiWaze } from 'react-icons/si';
 
 type ContactProps = {
   locale: string;
@@ -142,6 +143,15 @@ export default function Contact({ locale }: ContactProps) {
                 <div>
                   <h3 className="font-medium">{t('address')}</h3>
                   <p className="text-gray-600">{t('addressValue')}</p>
+                  <a 
+                    href="https://www.waze.com/ul?ll=32.25654%2C34.92204&navigate=yes&zoom=17" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center text-green-600 hover:text-green-800 transition-colors mt-1"
+                  >
+                    <SiWaze className={`${direction === 'rtl' ? 'ml-2' : 'mr-2'}`} />
+                    <span>{locale === 'he' ? 'נווט אלינו ב-Waze' : 'Navigate with Waze'}</span>
+                  </a>
                 </div>
               </div>
               
