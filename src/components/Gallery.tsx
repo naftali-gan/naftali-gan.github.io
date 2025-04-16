@@ -1,19 +1,24 @@
+'use client';
+
 import GalleryItem from '@/components/GalleryItem';
 import { galleryItems } from '@/data/galleryData';
-import { Metadata } from 'next';
+import { createTranslator } from '@/utils/translations';
 
-export const metadata: Metadata = {
-  title: 'גלריה | המשתלה של נפתלי',
-  description: 'צפו בתמונות מהמשתלה שלנו והצמחים היפים שלנו במשתלה של נפתלי',
-};
+interface GalleryProps {
+  locale: string;
+}
 
-export default function GalleryPage() {
+export default function Gallery({ locale }: GalleryProps) {
+  const t = createTranslator(locale);
+
   return (
     <main className="min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4">
-        <h1 className="text-4xl font-bold mb-8 text-center">הגלריה שלנו</h1>
+        <h1 className="text-4xl font-bold mb-8 text-center">{t('gallery.title')}</h1>
         <p className="text-center max-w-3xl mx-auto mb-12">
-          צפו באוסף תמונות מהמשתלה, מהצמחים שלנו, ומפרויקטים שונים שהשתתפנו בהם לאורך השנים.
+          {locale === 'en'
+            ? 'View a collection of photos from our nursery, our plants, and various projects we\'ve been involved in over the years.'
+            : 'צפו באוסף תמונות מהמשתלה, מהצמחים שלנו, ומפרויקטים שונים שהשתתפנו בהם לאורך השנים.'}
         </p>
         
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-6">
