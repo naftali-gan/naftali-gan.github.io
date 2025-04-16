@@ -16,7 +16,7 @@ export default function Privacy({ locale }: PrivacyProps) {
       <div className="max-w-4xl mx-auto px-4">
         <h1 className={`text-4xl font-bold mb-8 text-center`}>{t('privacy.title')}</h1>
         
-        <div className={`bg-white rounded-lg shadow-md p-8 mb-8 ${textAlign}`}>
+        <div className={`bg-white rounded-lg ${textAlign}`}>
           <p className="mb-8 text-lg">
             {t('privacy.intro')}
           </p>

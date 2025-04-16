@@ -120,6 +120,10 @@ export const translations = {
       content1: "We use your information to provide and improve our services, process transactions, and respond to your inquiries.",
       content2: "We may use your email address to send you information about our products, special offers, and updates. You can opt out of these communications at any time."
     },
+    legal: {
+      title: "Legal Basis",
+      content: "We process your personal information based on legitimate interests, consent, or as necessary to fulfill our contractual obligations to you."
+    },
     sharing: {
       title: "Information Sharing",
       content: "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as necessary to provide services or as required by law."
@@ -131,6 +135,10 @@ export const translations = {
     security: {
       title: "Data Security",
       content: "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction."
+    },
+    rights: {
+      title: "Your Rights",
+      content: "You have the right to access, correct, or delete your personal information. You may also have the right to restrict or object to certain processing of your data."
     },
     changes: {
       title: "Changes to This Policy",
