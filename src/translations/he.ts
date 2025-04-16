@@ -89,7 +89,19 @@ export const translations = {
   footer: {
     rights: "כל הזכויות שמורות למשתלת נפתלי",
     privacy: "מדיניות פרטיות",
-    terms: "תנאי שימוש"
+    terms: "תנאי שימוש",
+    contact: "צור קשר",
+    quickLinks: "קישורים מהירים",
+    home: "בית",
+    about: "אודות",
+    products: "מוצרים",
+    gallery: "גלריה",
+    followUs: "עקבו אחרינו",
+    subscribe: "הירשמו לניוזלטר שלנו",
+    yourEmail: "האימייל שלך",
+    subscribeButton: "הרשמה",
+    navigateWaze: "נווט אלינו ב-Waze",
+    hours: "א'-ה': 7:30-16:00, ו': 7:00-13:00"
   },
   privacy: {
     title: "מדיניות פרטיות",

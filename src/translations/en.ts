@@ -89,7 +89,19 @@ export const translations = {
   footer: {
     rights: "All rights reserved to Naftali's Nursery",
     privacy: "Privacy Policy",
-    terms: "Terms of Use"
+    terms: "Terms of Use",
+    contact: "Contact Us",
+    quickLinks: "Quick Links",
+    home: "Home",
+    about: "About",
+    products: "Products",
+    gallery: "Gallery",
+    followUs: "Follow Us",
+    subscribe: "Subscribe to our newsletter",
+    yourEmail: "Your email",
+    subscribeButton: "Subscribe",
+    navigateWaze: "Navigate with Waze",
+    hours: "Sun-Thu: 7:30AM-4:00PM, Fri: 7:00AM-1:00PM"
   },
   privacy: {
     title: "Privacy Policy",
