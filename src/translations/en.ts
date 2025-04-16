@@ -85,5 +85,44 @@ export const translations = {
     rights: "All rights reserved to Naftali's Nursery",
     privacy: "Privacy Policy",
     terms: "Terms of Use"
+  },
+  privacy: {
+    title: "Privacy Policy",
+    metadata: {
+      title: "Privacy Policy | Naftali's Nursery",
+      description: "Learn about our privacy policy and how we handle your information at Naftali's Nursery"
+    },
+    intro: "At Naftali's Nursery, we respect your privacy and are committed to protecting your personal information. This privacy policy explains how we collect, use, and safeguard your data when you visit our website or use our services.",
+    collection: {
+      title: "Information We Collect",
+      content1: "When you visit our website, we may collect certain information automatically, including your IP address, browser type, and operating system.",
+      content2: "When you contact us or make a purchase, we may collect personal information such as your name, email address, phone number, and shipping address."
+    },
+    usage: {
+      title: "How We Use Your Information",
+      content1: "We use your information to provide and improve our services, process transactions, and respond to your inquiries.",
+      content2: "We may use your email address to send you information about our products, special offers, and updates. You can opt out of these communications at any time."
+    },
+    sharing: {
+      title: "Information Sharing",
+      content: "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as necessary to provide services or as required by law."
+    },
+    cookies: {
+      title: "Cookies",
+      content: "Our website uses cookies to enhance your experience and analyze our website traffic. You can set your browser to refuse cookies, but this may limit some functionality of our website."
+    },
+    security: {
+      title: "Data Security",
+      content: "We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction."
+    },
+    changes: {
+      title: "Changes to This Policy",
+      content: "We may update our privacy policy from time to time. Any changes will be posted on this page, and if significant changes are made, we will notify you by email."
+    },
+    contact: {
+      title: "Contact Us",
+      content: "If you have any questions about our privacy policy, please contact us using the information provided on our contact page."
+    },
+    lastUpdated: "Last updated: May 2024"
   }
 }; 

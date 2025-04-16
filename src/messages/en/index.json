@@ -65,5 +65,52 @@
     "rights": "All rights reserved to Naftali's Nursery",
     "privacy": "Privacy Policy",
     "terms": "Terms of Use"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "metadata": {
+      "title": "Privacy Policy | Naftali's Nursery",
+      "description": "Learn about our privacy policy and how we handle your information at Naftali's Nursery in accordance with Israeli law"
+    },
+    "intro": "At Naftali's Nursery, we respect your privacy and are committed to protecting your personal information in accordance with the Protection of Privacy Law, 5741-1981 (the \"Privacy Law\") of the State of Israel. This privacy policy explains how we collect, use, and safeguard your data when you visit our website or use our services.",
+    "collection": {
+      "title": "Information We Collect",
+      "content1": "When you visit our website, we may collect certain information automatically, including your IP address, browser type, and operating system.",
+      "content2": "When you contact us or make a purchase, we may collect personal information such as your name, email address, phone number, and shipping address. We collect only the minimum information necessary to provide our services to you."
+    },
+    "usage": {
+      "title": "How We Use Your Information",
+      "content1": "We use your information to provide and improve our services, process transactions, and respond to your inquiries. We process your personal information only for the purposes for which it was collected and in accordance with this policy.",
+      "content2": "We may use your email address to send you information about our products, special offers, and updates. You can opt out of these communications at any time by contacting us or using the unsubscribe option in our emails."
+    },
+    "legal": {
+      "title": "Legal Basis for Processing",
+      "content": "We process your personal information based on your consent and as necessary to fulfill our contractual obligations to you. Under Israeli law, we are required to maintain the confidentiality of your personal information and to secure it appropriately."
+    },
+    "sharing": {
+      "title": "Information Sharing",
+      "content": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as necessary to provide services or as required by Israeli law. Any transfer of data to third-party service providers is conducted in compliance with applicable data protection requirements."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Our website uses cookies to enhance your experience and analyze our website traffic. You can set your browser to refuse cookies, but this may limit some functionality of our website. We use cookies in accordance with Israeli law requirements."
+    },
+    "security": {
+      "title": "Data Security",
+      "content": "In accordance with the requirements of Israeli law, we implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. We maintain security procedures as required by the Privacy Protection Regulations (Data Security), 5777-2017."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "content": "Under Israeli privacy law, you have the right to access, correct, update, or request deletion of your personal information. You may also have the right to object to the processing of your personal information or request that we restrict the processing. To exercise these rights, please contact us using the information provided on our contact page."
+    },
+    "changes": {
+      "title": "Changes to This Policy",
+      "content": "We may update our privacy policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. Any changes will be posted on this page, and if significant changes are made, we will notify you by email."
+    },
+    "contact": {
+      "title": "Contact Us",
+      "content": "If you have any questions about our privacy policy or how we handle your information under Israeli privacy laws, please contact our privacy officer using the information provided on our contact page."
+    },
+    "lastUpdated": "Last updated: May 2024"
   }
 } 
