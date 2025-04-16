@@ -20,10 +20,8 @@ export async function generateMetadata({
   const translations = getTranslations(locale);
   
   return {
-    title: `${translations.gallery.title} | ${translations.metadata.title.split('|')[0].trim()}`,
-    description: locale === 'en' 
-      ? 'Discover photos of our nursery and beautiful plants at Naftali\'s Nursery'
-      : 'צפו בתמונות מהמשתלה שלנו והצמחים היפים שלנו במשתלה של נפתלי',
+    title: translations.gallery.metadata.title,
+    description: translations.gallery.metadata.description,
   };
 }
 

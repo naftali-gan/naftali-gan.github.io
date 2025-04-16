@@ -46,7 +46,12 @@ export const translations = {
   },
   gallery: {
     title: "Gallery",
-    subtitle: "A glimpse of Naftali's Nursery"
+    subtitle: "A glimpse of Naftali's Nursery",
+    description: "View a collection of photos from our nursery, our plants, and various projects we've been involved in over the years.",
+    metadata: {
+      title: "Gallery | Naftali's Nursery",
+      description: "Discover photos of our nursery and beautiful plants at Naftali's Nursery"
+    }
   },
   contact: {
     title: "Contact Us",
