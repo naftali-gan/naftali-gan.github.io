@@ -1,7 +1,7 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
 
 interface GalleryItemProps {
@@ -24,7 +24,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
 
   const buttonClasses = "bg-white/50 backdrop-blur-sm rounded-full flex items-center justify-center text-black hover:bg-white/70 transition-colors z-10 absolute";
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     setIsClosing(true);
     setTimeout(() => {
       setIsModalOpen(false);
@@ -32,21 +32,21 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
       setCurrentIndex(index);
       setCurrentImage(item.image);
     }, 300);
-  };
+  }, [index, item.image]);
 
-  const handlePrevImage = () => {
+  const handlePrevImage = useCallback(() => {
     if (allItems.length <= 1) return;
     const newIndex = currentIndex <= 0 ? allItems.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
     setCurrentImage(allItems[newIndex].image);
-  };
+  }, [allItems, currentIndex]);
 
-  const handleNextImage = () => {
+  const handleNextImage = useCallback(() => {
     if (allItems.length <= 1) return;
     const newIndex = currentIndex >= allItems.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
     setCurrentImage(allItems[newIndex].image);
-  };
+  }, [allItems, currentIndex]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -74,7 +74,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'auto';
     };
-  }, [isModalOpen, isClosing, currentIndex, allItems.length]);
+  }, [isModalOpen, isClosing, currentIndex, allItems.length, handleClose, handlePrevImage, handleNextImage]);
 
   return (
     <>
@@ -114,7 +114,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
                   className={`${buttonClasses} left-4 top-1/2 transform -translate-y-1/2 w-12 h-12`}
                   onClick={(e) => {
                     e.stopPropagation();
-                    !isClosing && handlePrevImage();
+                    if (!isClosing) handlePrevImage();
                   }}
                 >
                   <FaChevronLeft size={20} />
@@ -124,7 +124,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
                   className={`${buttonClasses} right-4 top-1/2 transform -translate-y-1/2 w-12 h-12`}
                   onClick={(e) => {
                     e.stopPropagation();
-                    !isClosing && handleNextImage();
+                    if (!isClosing) handleNextImage();
                   }}
                 >
                   <FaChevronRight size={20} />
