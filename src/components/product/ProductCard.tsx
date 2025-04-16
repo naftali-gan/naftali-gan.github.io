@@ -26,7 +26,7 @@ export default function ProductCard({
       <div className="h-64 relative">
         <Image
           src={imageSrc}
-          alt={name}
+          alt={`${name} plant`}
           fill
           style={{ objectFit: "cover" }}
         />

@@ -85,7 +85,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
         <div className="relative w-full h-[160px] md:h-[300px]">
           <Image
             src={item.thumbnail}
-            alt="Gallery image"
+            alt="Gallery plant image"
             fill
             style={{ objectFit: "cover" }}
           />
@@ -135,7 +135,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
             <div className="relative">
               <Image
                 src={currentImage}
-                alt="Gallery image"
+                alt="Plant in gallery"
                 className="rounded-xl max-h-[85vh] max-w-[90vw] w-auto h-auto"
                 width={1200}
                 height={900}

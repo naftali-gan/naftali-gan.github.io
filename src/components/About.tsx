@@ -21,7 +21,7 @@ export default function About({ locale }: AboutProps) {
           <div className="relative h-[400px] rounded-lg overflow-hidden shadow-lg">
             <Image
               src="/images/gallery/fullsize/gallery24.webp"
-              alt={t('title')}
+              alt="Nursery garden view"
               fill
               style={{ objectFit: "cover" }}
             />

@@ -34,9 +34,9 @@ export default function EnglishHome() {
         <div className="absolute inset-0 -z-10">
           <Carousel 
             images={[
-              { src: '/images/home/carousel1.webp', alt: 'Naftali\'s Nursery - Image 1' },
-              { src: '/images/home/carousel2.webp', alt: 'Naftali\'s Nursery - Image 2' },
-              { src: '/images/home/carousel3.webp', alt: 'Naftali\'s Nursery - Image 3' },
+              { src: '/images/home/carousel1.webp', alt: 'Nursery entrance with palm trees' },
+              { src: '/images/home/carousel2.webp', alt: 'Palm tree collection' },
+              { src: '/images/home/carousel3.webp', alt: 'Ornamental plants display' },
             ]}
           />
         </div>
@@ -78,7 +78,7 @@ export default function EnglishHome() {
             <div className="relative h-96 rounded-lg overflow-hidden">
               <Image
                 src="/images/gallery/fullsize/gallery12.webp"
-                alt="Naftali's Nursery"
+                alt="Nursery plants display"
                 fill
                 style={{ objectFit: "cover" }}
               />

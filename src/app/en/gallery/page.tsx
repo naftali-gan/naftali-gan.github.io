@@ -26,13 +26,6 @@ export default function GalleryPage() {
             />
           ))}
         </div>
-        
-        <div className="mt-16 text-center">
-          <p className="mb-4">Want to see more? Follow us on social media!</p>
-          <div className="flex justify-center gap-4">
-            <a href="#" className="text-blue-700 hover:text-blue-900">Facebook</a>
-          </div>
-        </div>
       </div>
     </main>
   );

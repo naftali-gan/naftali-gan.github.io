@@ -26,15 +26,6 @@ export default function GalleryPage() {
             />
           ))}
         </div>
-        
-        <div className="mt-16 text-center">
-          <p className="mb-4">רוצים לראות עוד? עקבו אחרינו ברשתות החברתיות!</p>
-          <div className="flex justify-center gap-4">
-            <a href="#" className="text-blue-700 hover:text-blue-900">פייסבוק</a>
-            <a href="#" className="text-pink-600 hover:text-pink-800">אינסטגרם</a>
-            <a href="#" className="text-red-600 hover:text-red-800">יוטיוב</a>
-          </div>
-        </div>
       </div>
     </main>
   );

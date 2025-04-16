@@ -34,9 +34,9 @@ export default function HebrewHome() {
         <div className="absolute inset-0 -z-10">
           <Carousel 
             images={[
-              { src: '/images/home/carousel1.webp', alt: 'משתלת נפתלי - תמונה 1' },
-              { src: '/images/home/carousel2.webp', alt: 'משתלת נפתלי - תמונה 2' },
-              { src: '/images/home/carousel3.webp', alt: 'משתלת נפתלי - תמונה 3' },
+              { src: '/images/home/carousel1.webp', alt: 'כניסה למשתלה עם דקלים' },
+              { src: '/images/home/carousel2.webp', alt: 'אוסף דקלים' },
+              { src: '/images/home/carousel3.webp', alt: 'תצוגת צמחי נוי' },
             ]}
           />
         </div>
@@ -62,7 +62,7 @@ export default function HebrewHome() {
             <div className="relative h-96 rounded-lg overflow-hidden">
               <Image
                 src="/images/gallery/fullsize/gallery12.webp"
-                alt="משתלת נפתלי"
+                alt="תצוגת צמחים במשתלה"
                 fill
                 style={{ objectFit: "cover" }}
               />
