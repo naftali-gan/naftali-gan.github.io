@@ -13,18 +13,18 @@ export const metadata: Metadata = {
 export default function HebrewHome() {
   // Featured products data
   const featuredProducts = [
-    { id: '1', image: '/images/products/cunninghamiana.webp', name: 'דקל טבעות' },
-    { id: '2', image: '/images/products/bifurcate.webp', name: 'דקל זנב שועל' },
-    { id: '3', image: '/images/products/roystonea.webp', name: 'דקל המלך' },
-    { id: '4', image: '/images/products/thouarsii.webp', name: 'ציקס טורסאי' },
-    { id: '5', image: '/images/products/roebelenii.webp', name: 'דקל רובליני' },
-    { id: '6', image: '/images/products/revoluta.webp', name: 'ציקס רבולטה' },
-    { id: '7', image: '/images/products/europaea.webp', name: 'זית אירופי' },
-    { id: '8', image: '/images/products/limon.webp', name: 'לימון' },
-    { id: '9', image: '/images/products/clementina.webp', name: 'קלמנטינה' },
-    { id: '10', image: '/images/products/sinensis.webp', name: 'תפוז וושינגטון' },
-    { id: '11', image: '/images/products/decaryi.webp', name: 'דקל משולש' },
-    { id: '12', image: '/images/products/romanzoffiana.webp', name: 'דקל המלך' },
+    { id: '1', image: '/images/products/areca.webp', name: 'דקל אריקה' },
+    { id: '2', image: '/images/products/cunninghamiana.webp', name: 'דקל טבעות' },
+    { id: '3', image: '/images/products/bifurcate.webp', name: 'דקל זנב שועל' },
+    { id: '4', image: '/images/products/roystonea.webp', name: 'דקל המלך' },
+    { id: '5', image: '/images/products/thouarsii.webp', name: 'ציקס טורסאי' },
+    { id: '6', image: '/images/products/roebelenii.webp', name: 'דקל רובליני' },
+    { id: '7', image: '/images/products/revoluta.webp', name: 'ציקס רבולטה' },
+    { id: '8', image: '/images/products/europaea.webp', name: 'זית אירופי' },
+    { id: '9', image: '/images/products/limon.webp', name: 'לימון' },
+    { id: '10', image: '/images/products/clementina.webp', name: 'קלמנטינה' },
+    { id: '11', image: '/images/products/sinensis.webp', name: 'תפוז וושינגטון' },
+    { id: '12', image: '/images/products/decaryi.webp', name: 'דקל משולש' },
   ];
 
   return (

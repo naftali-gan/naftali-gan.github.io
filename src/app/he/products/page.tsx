@@ -34,6 +34,15 @@ export default function ProductsPage() {
       products: [
         { 
           id: 1, 
+          name: "דקל אריקה", 
+          image: "/images/products/areca.webp",
+          scientificName: "Dypsis lutescens",
+          height: "4-8 מ'",
+          diameter: "20-30 ס\"מ",
+          details: "דקל אריקה, המכונה גם דקל פרפר, הינו דקל פופולרי לגידול במקומות סגורים ופתוחים עם עלים נוצתיים ומקושתים. הוא מפתח מספר גזעים ויוצר מראה טרופי עשיר."
+        },
+        { 
+          id: 2, 
           name: "דקל טבעות", 
           image: "/images/products/cunninghamiana.webp",
           scientificName: "Archontophoenix cunninghamiana",
@@ -42,7 +51,7 @@ export default function ProductsPage() {
           details: "דקל טבעות הינו דקל אלגנטי, בעל גזע יחיד וחלק בצבע אפור בהיר. הוא מפגין כתר חינני וכהה של עלים נוצתיים."
         },
         { 
-          id: 2, 
+          id: 3, 
           name: "דקל זנב שועל", 
           image: "/images/products/bifurcate.webp",
           scientificName: "Wodyetia bifurcata",
@@ -51,7 +60,7 @@ export default function ProductsPage() {
           details: "דקל זנב שועל ידוע בעלים הייחודיים שלו הדומים לזנב שועל. יש לו גזע חלק בצבע אפור בהיר והוא צומח במהירות יחסית."
         },
         { 
-          id: 3, 
+          id: 4, 
           name: "דקל המלך", 
           image: "/images/products/roystonea.webp",
           scientificName: "Roystonea regia",
@@ -60,7 +69,7 @@ export default function ProductsPage() {
           details: "דקל המלך הוא דקל גבוה ומלכותי עם גזע חלק בצבע אפור בהיר בעל התנפחות מובהקת. הוא מתהדר בעלים נוצתיים אלגנטיים ונפוץ בנטיעת שדרות."
         },
         { 
-          id: 4, 
+          id: 5, 
           name: "דקל רובליני", 
           image: "/images/products/roebelenii.webp",
           scientificName: "Phoenix roebelenii",
@@ -69,7 +78,7 @@ export default function ProductsPage() {
           details: "דקל רובליני הוא דקל קטן ואלגנטי עם גזע דק ועלים מקושתים עדינים. הוא מושלם למרחבים קטנים ולשתילה במכלים."
         },
         { 
-          id: 5, 
+          id: 6, 
           name: "דקל משולש", 
           image: "/images/products/decaryi.webp",
           scientificName: "Dypsis decaryi",
@@ -78,7 +87,7 @@ export default function ProductsPage() {
           details: "דקל משולש קרוי על שם הסידור המשולש המובהק של העלים שלו. יש לו מראה פיסולי ייחודי שהופך אותו לבולט באזור הנטיעה."
         },
         { 
-          id: 6, 
+          id: 7, 
           name: "דקל המלכה", 
           image: "/images/products/romanzoffiana.webp",
           scientificName: "Syagrus romanzoffiana",

@@ -13,18 +13,18 @@ export const metadata: Metadata = {
 export default function EnglishHome() {
   // Featured products data
   const featuredProducts = [
-    { id: '1', image: '/images/products/cunninghamiana.webp', name: 'King Palm' },
-    { id: '2', image: '/images/products/bifurcate.webp', name: 'Foxtail Palm' },
-    { id: '3', image: '/images/products/roystonea.webp', name: 'Royal Palm' },
-    { id: '4', image: '/images/products/thouarsii.webp', name: 'Cycas Thouarsii' },
-    { id: '5', image: '/images/products/roebelenii.webp', name: 'Robelini Palm' },
-    { id: '6', image: '/images/products/revoluta.webp', name: 'Cycas Revoluta' },
-    { id: '7', image: '/images/products/europaea.webp', name: 'European Olive' },
-    { id: '8', image: '/images/products/limon.webp', name: 'Lemon Tree' },
-    { id: '9', image: '/images/products/clementina.webp', name: 'Clementine Tree' },
-    { id: '10', image: '/images/products/sinensis.webp', name: 'Washington Orange' },
-    { id: '11', image: '/images/products/decaryi.webp', name: 'Triangle Palm' },
-    { id: '12', image: '/images/products/romanzoffiana.webp', name: 'Queen Palm' },
+    { id: '1', image: '/images/products/areca.webp', name: 'Areca Palm' },
+    { id: '2', image: '/images/products/cunninghamiana.webp', name: 'King Palm' },
+    { id: '3', image: '/images/products/bifurcate.webp', name: 'Foxtail Palm' },
+    { id: '4', image: '/images/products/roystonea.webp', name: 'Royal Palm' },
+    { id: '5', image: '/images/products/thouarsii.webp', name: 'Cycas Thouarsii' },
+    { id: '6', image: '/images/products/roebelenii.webp', name: 'Robelini Palm' },
+    { id: '7', image: '/images/products/revoluta.webp', name: 'Cycas Revoluta' },
+    { id: '8', image: '/images/products/europaea.webp', name: 'European Olive' },
+    { id: '9', image: '/images/products/limon.webp', name: 'Lemon Tree' },
+    { id: '10', image: '/images/products/clementina.webp', name: 'Clementine Tree' },
+    { id: '11', image: '/images/products/sinensis.webp', name: 'Washington Orange' },
+    { id: '12', image: '/images/products/decaryi.webp', name: 'Triangle Palm' },
   ];
 
   return (

@@ -34,6 +34,15 @@ export default function ProductsPage() {
       products: [
         { 
           id: 1, 
+          name: "Areca Palm", 
+          image: "/images/products/areca.webp",
+          scientificName: "Dypsis lutescens",
+          height: "4-8m",
+          diameter: "20-30cm",
+          details: "The Areca Palm, also known as Butterfly Palm, is a popular indoor and outdoor palm with feathery, arching fronds. It forms multiple trunks and creates a dense, tropical appearance."
+        },
+        { 
+          id: 2, 
           name: "King Palm", 
           image: "/images/products/cunninghamiana.webp",
           scientificName: "Archontophoenix cunninghamiana",
@@ -42,7 +51,7 @@ export default function ProductsPage() {
           details: "The King Palm is an elegant, single-trunk palm with a smooth, light gray trunk. It has a graceful, feathery crown of dark green fronds."
         },
         { 
-          id: 2, 
+          id: 3, 
           name: "Foxtail Palm", 
           image: "/images/products/bifurcate.webp",
           scientificName: "Wodyetia bifurcata",
@@ -51,7 +60,7 @@ export default function ProductsPage() {
           details: "The Foxtail Palm is known for its unique, fluffy fronds that resemble a fox's tail. It has a smooth, light gray trunk and is relatively fast-growing."
         },
         { 
-          id: 3, 
+          id: 4, 
           name: "Royal Palm", 
           image: "/images/products/roystonea.webp",
           scientificName: "Roystonea regia",
@@ -60,7 +69,7 @@ export default function ProductsPage() {
           details: "The Royal Palm is a tall, majestic palm with a smooth, light gray trunk that has a distinctive bulge. It has elegant, feathery fronds and is commonly used in avenue plantings."
         },
         { 
-          id: 4, 
+          id: 5, 
           name: "Robelini Palm", 
           image: "/images/products/roebelenii.webp",
           scientificName: "Phoenix roebelenii",
@@ -69,7 +78,7 @@ export default function ProductsPage() {
           details: "The Robelini Palm is a small, elegant palm with a slender trunk and delicate, arching fronds. It's perfect for smaller spaces and container planting."
         },
         { 
-          id: 5, 
+          id: 6, 
           name: "Triangle Palm", 
           image: "/images/products/decaryi.webp",
           scientificName: "Dypsis decaryi",
@@ -78,7 +87,7 @@ export default function ProductsPage() {
           details: "The Triangle Palm is named for its distinctive three-sided arrangement of fronds. It has a unique, sculptural appearance that makes it a standout specimen."
         },
         { 
-          id: 6, 
+          id: 7, 
           name: "Queen Palm", 
           image: "/images/products/romanzoffiana.webp",
           scientificName: "Syagrus romanzoffiana",
@@ -94,7 +103,7 @@ export default function ProductsPage() {
       description: "Beautiful ornamental trees to enhance your garden's aesthetics.",
       products: [
         { 
-          id: 7, 
+          id: 8, 
           name: "Cycas Thouarsii", 
           image: "/images/products/thouarsii.webp",
           scientificName: "Cycas thouarsii",
@@ -103,7 +112,7 @@ export default function ProductsPage() {
           details: "Cycas Thouarsii is a slow-growing cycad with a thick, scaly trunk and a crown of stiff, feathery fronds. It's an ancient plant with a prehistoric appearance."
         },
         { 
-          id: 8, 
+          id: 9, 
           name: "Cycas Revoluta", 
           image: "/images/products/revoluta.webp",
           scientificName: "Cycas revoluta",
@@ -112,7 +121,7 @@ export default function ProductsPage() {
           details: "Cycas Revoluta, commonly known as Sago Palm, is not a true palm but a cycad. It has a thick, shaggy trunk and stiff, dark green fronds."
         },
         { 
-          id: 9, 
+          id: 10, 
           name: "European Olive", 
           image: "/images/products/europaea.webp",
           scientificName: "Olea europaea",
@@ -128,7 +137,7 @@ export default function ProductsPage() {
       description: "Productive fruit trees that add beauty and bounty to your garden.",
       products: [
         { 
-          id: 10, 
+          id: 11, 
           name: "Lemon Tree", 
           image: "/images/products/limon.webp",
           scientificName: "Citrus limon",
@@ -136,7 +145,7 @@ export default function ProductsPage() {
           details: "The Lemon Tree is a small evergreen tree that produces fragrant white flowers and yellow fruits. It's perfect for pots or gardens and provides year-round interest."
         },
         { 
-          id: 11, 
+          id: 12, 
           name: "Clementine Tree", 
           image: "/images/products/clementina.webp",
           scientificName: "Citrus clementina",
@@ -144,7 +153,7 @@ export default function ProductsPage() {
           details: "The Clementine Tree is a small, thornless citrus tree that produces sweet, easy-to-peel fruits. It has glossy, dark green leaves and fragrant white flowers."
         },
         { 
-          id: 12, 
+          id: 13, 
           name: "Washington Orange", 
           image: "/images/products/sinensis.webp",
           scientificName: "Citrus sinensis",
