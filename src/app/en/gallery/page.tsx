@@ -1,5 +1,5 @@
 import GalleryItem from '@/components/GalleryItem';
-import galleryItems from '@/data/galleryData';
+import { galleryItems } from '@/data/galleryData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,7 +18,12 @@ export default function GalleryPage() {
         
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6">
           {galleryItems.map((item, index) => (
-            <GalleryItem key={index} item={item} />
+            <GalleryItem 
+              key={index} 
+              item={item} 
+              allItems={galleryItems} 
+              index={index} 
+            />
           ))}
         </div>
         

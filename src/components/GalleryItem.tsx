@@ -8,24 +8,53 @@ interface GalleryItemProps {
     image: string;
     thumbnail: string;
   };
+  allItems?: Array<{
+    image: string;
+    thumbnail: string;
+  }>;
+  index?: number;
 }
 
-export default function GalleryItem({ item }: GalleryItemProps) {
+export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryItemProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(index);
+  const [currentImage, setCurrentImage] = useState(item.image);
 
   const handleClose = () => {
     setIsClosing(true);
     setTimeout(() => {
       setIsModalOpen(false);
       setIsClosing(false);
+      setCurrentIndex(index);
+      setCurrentImage(item.image);
     }, 300);
+  };
+
+  const handlePrevImage = () => {
+    if (allItems.length <= 1) return;
+    const newIndex = currentIndex <= 0 ? allItems.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+    setCurrentImage(allItems[newIndex].image);
+  };
+
+  const handleNextImage = () => {
+    if (allItems.length <= 1) return;
+    const newIndex = currentIndex >= allItems.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+    setCurrentImage(allItems[newIndex].image);
   };
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === 'Escape' && isModalOpen && !isClosing) {
+      if (!isModalOpen || isClosing) return;
+      
+      if (event.key === 'Escape') {
         handleClose();
+      } else if (event.key === 'ArrowLeft') {
+        handlePrevImage();
+      } else if (event.key === 'ArrowRight') {
+        handleNextImage();
       }
     };
 
@@ -42,7 +71,7 @@ export default function GalleryItem({ item }: GalleryItemProps) {
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'auto';
     };
-  }, [isModalOpen, isClosing]);
+  }, [isModalOpen, isClosing, currentIndex, allItems.length]);
 
   return (
     <>
@@ -75,9 +104,38 @@ export default function GalleryItem({ item }: GalleryItemProps) {
             >
               ✕
             </button>
+            
+            {allItems.length > 1 && (
+              <>
+                <button 
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center text-black hover:bg-white transition-colors"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    !isClosing && handlePrevImage();
+                  }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+                
+                <button 
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center text-black hover:bg-white transition-colors"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    !isClosing && handleNextImage();
+                  }}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </>
+            )}
+            
             <div className="relative h-[85vh]">
               <Image
-                src={item.image}
+                src={currentImage}
                 alt="Gallery image"
                 fill
                 style={{ objectFit: "contain" }}

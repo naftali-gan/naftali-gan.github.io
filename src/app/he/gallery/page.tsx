@@ -1,10 +1,10 @@
 import GalleryItem from '@/components/GalleryItem';
-import galleryItems from '@/data/galleryData';
+import { galleryItems } from '@/data/galleryData';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'גלריה | משתלת נפתלי',
-  description: 'גלו תמונות מהמשתלה והצמחים המרהיבים שלנו במשתלת נפתלי',
+  title: 'גלריה | המשתלה של נפתלי',
+  description: 'צפו בתמונות מהמשתלה שלנו והצמחים היפים שלנו במשתלה של נפתלי',
 };
 
 export default function GalleryPage() {
@@ -18,7 +18,12 @@ export default function GalleryPage() {
         
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 lg:gap-6">
           {galleryItems.map((item, index) => (
-            <GalleryItem key={index} item={item} />
+            <GalleryItem 
+              key={index} 
+              item={item} 
+              allItems={galleryItems} 
+              index={index} 
+            />
           ))}
         </div>
         
