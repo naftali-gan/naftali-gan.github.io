@@ -21,7 +21,6 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
   const [isClosing, setIsClosing] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(index);
   const [currentImage, setCurrentImage] = useState(item.image);
-  const [imgLoaded, setImgLoaded] = useState(false);
 
   const handleClose = () => {
     setIsClosing(true);
@@ -30,13 +29,11 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
       setIsClosing(false);
       setCurrentIndex(index);
       setCurrentImage(item.image);
-      setImgLoaded(false);
     }, 300);
   };
 
   const handlePrevImage = () => {
     if (allItems.length <= 1) return;
-    setImgLoaded(false);
     const newIndex = currentIndex <= 0 ? allItems.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
     setCurrentImage(allItems[newIndex].image);
@@ -44,7 +41,6 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
 
   const handleNextImage = () => {
     if (allItems.length <= 1) return;
-    setImgLoaded(false);
     const newIndex = currentIndex >= allItems.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
     setCurrentImage(allItems[newIndex].image);
@@ -134,17 +130,13 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
               </>
             )}
             
-            <div className={`relative ${!imgLoaded ? 'bg-gray-100 rounded-xl w-[80vw] h-[80vh] flex items-center justify-center' : ''}`}>
-              {!imgLoaded && (
-                <div className="animate-pulse text-gray-400">Loading...</div>
-              )}
+            <div className="relative">
               <Image
                 src={currentImage}
                 alt="Gallery image"
-                className={`rounded-xl max-h-[85vh] max-w-[90vw] w-auto h-auto ${!imgLoaded ? 'invisible' : 'visible'}`}
+                className="rounded-xl max-h-[85vh] max-w-[90vw] w-auto h-auto"
                 width={1200}
                 height={900}
-                onLoadingComplete={() => setImgLoaded(true)}
                 priority
               />
             </div>
