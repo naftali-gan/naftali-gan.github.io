@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
 
 interface GalleryItemProps {
   item: {
@@ -20,6 +21,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
   const [isClosing, setIsClosing] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(index);
   const [currentImage, setCurrentImage] = useState(item.image);
+  const [imgLoaded, setImgLoaded] = useState(false);
 
   const handleClose = () => {
     setIsClosing(true);
@@ -28,11 +30,13 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
       setIsClosing(false);
       setCurrentIndex(index);
       setCurrentImage(item.image);
+      setImgLoaded(false);
     }, 300);
   };
 
   const handlePrevImage = () => {
     if (allItems.length <= 1) return;
+    setImgLoaded(false);
     const newIndex = currentIndex <= 0 ? allItems.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
     setCurrentImage(allItems[newIndex].image);
@@ -40,6 +44,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
 
   const handleNextImage = () => {
     if (allItems.length <= 1) return;
+    setImgLoaded(false);
     const newIndex = currentIndex >= allItems.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
     setCurrentImage(allItems[newIndex].image);
@@ -95,14 +100,14 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
           onClick={!isClosing ? handleClose : undefined}
         >
           <div 
-            className={`relative w-full max-w-5xl max-h-[95vh] overflow-hidden rounded-xl shadow-2xl ${isClosing ? 'animate-modal-fade-out' : 'animate-modal-fade'}`} 
+            className={`relative ${isClosing ? 'animate-modal-fade-out' : 'animate-modal-fade'}`} 
             onClick={(e) => e.stopPropagation()}
           >
             <button 
               className="absolute top-4 right-4 z-10 bg-white/90 backdrop-blur-sm rounded-full w-10 h-10 flex items-center justify-center text-black hover:bg-white transition-colors"
               onClick={!isClosing ? handleClose : undefined}
             >
-              ✕
+              <FaTimes size={18} />
             </button>
             
             {allItems.length > 1 && (
@@ -114,9 +119,7 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
                     !isClosing && handlePrevImage();
                   }}
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
+                  <FaChevronLeft size={20} />
                 </button>
                 
                 <button 
@@ -126,20 +129,23 @@ export default function GalleryItem({ item, allItems = [], index = 0 }: GalleryI
                     !isClosing && handleNextImage();
                   }}
                 >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <FaChevronRight size={20} />
                 </button>
               </>
             )}
             
-            <div className="relative h-[85vh]">
+            <div className={`relative ${!imgLoaded ? 'bg-gray-100 rounded-xl w-[80vw] h-[80vh] flex items-center justify-center' : ''}`}>
+              {!imgLoaded && (
+                <div className="animate-pulse text-gray-400">Loading...</div>
+              )}
               <Image
                 src={currentImage}
                 alt="Gallery image"
-                fill
-                style={{ objectFit: "contain" }}
-                className="rounded-xl"
+                className={`rounded-xl max-h-[85vh] max-w-[90vw] w-auto h-auto ${!imgLoaded ? 'invisible' : 'visible'}`}
+                width={1200}
+                height={900}
+                onLoadingComplete={() => setImgLoaded(true)}
+                priority
               />
             </div>
           </div>
